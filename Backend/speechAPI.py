@@ -1,7 +1,11 @@
-from fastapi import FastAPI,Response
+from fastapi import FastAPI,Response, File, UploadFile
 from pydantic import BaseModel
 from fastapi.staticfiles import StaticFiles
+import shutil
+
 from utils import (audioGen,textGen,audioStore)
+from typing import Annotated
+import os 
 
 app = FastAPI()
 app.mount("/assets", StaticFiles(directory="./assets"), name="assets")
@@ -43,11 +47,15 @@ async def generate_conversation(config: ConvoConfig)->str:
     return Response(content=questionAudioURL)
 
 
-@app.post("/store-user-resp")
-async def store_user_response(userResponse: UserAudio):
+@app.post("/transcribe-user-speech")
+async def transcribe_user_speech(file: UploadFile):
     '''
     input: user audio object
     returns: transcription status update
     '''
+    os.makedirs("./user_audio_files",exist_ok = True)
+    with open("./user_audio_files/test.wav","wb") as buffer:
+        shutil.copyfileobj(file.file, buffer)
+
     transcription = audioStore.transcribeAudio()
     pass
