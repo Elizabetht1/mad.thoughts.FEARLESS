@@ -1,0 +1,1122 @@
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/Desktop/projects/tartan-hacks-25/Backend/speechAPI.py", line 34, in generate_conversation
+    for r in questionText:
+             ^^^^^^^^^^^^
+  File "/Users/elizabethterveen/Desktop/projects/tartan-hacks-25/Backend/utils/textGen.py", line 58, in generateText
+    f"completion_tokens_used: {response.usage.completition_tokens} \n"
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/pydantic/main.py", line 892, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'CompletionUsage' object has no attribute 'completition_tokens'. Did you mean: 'completion_tokens'?
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [26137]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 1 
+prompt_tokens_used: 28 
+total_tokens_used: 29 
+
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/pydantic/main.py", line 884, in __getattr__
+    return pydantic_extra[item]
+           ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'content'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/Desktop/projects/tartan-hacks-25/Backend/speechAPI.py", line 34, in generate_conversation
+    for r in questionText:
+             ^^^^^^^^^^^^
+  File "/Users/elizabethterveen/Desktop/projects/tartan-hacks-25/Backend/utils/textGen.py", line 62, in generateText
+    res = response.content.choices.delta.content
+          ^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/pydantic/main.py", line 886, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}') from exc
+AttributeError: 'ChatCompletionChunk' object has no attribute 'content'
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [26160]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 1 
+prompt_tokens_used: 28 
+total_tokens_used: 29 
+
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/pydantic/main.py", line 884, in __getattr__
+    return pydantic_extra[item]
+           ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'content'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/Desktop/projects/tartan-hacks-25/Backend/speechAPI.py", line 34, in generate_conversation
+    for r in questionText:
+             ^^^^^^^^^^^^
+  File "/Users/elizabethterveen/Desktop/projects/tartan-hacks-25/Backend/utils/textGen.py", line 62, in generateText
+    print(response.content)
+          ^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/pydantic/main.py", line 886, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}') from exc
+AttributeError: 'ChatCompletionChunk' object has no attribute 'content'
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [26187]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 1 
+prompt_tokens_used: 28 
+total_tokens_used: 29 
+
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/pydantic/main.py", line 884, in __getattr__
+    return pydantic_extra[item]
+           ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'content'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/Desktop/projects/tartan-hacks-25/Backend/speechAPI.py", line 34, in generate_conversation
+    for r in questionText:
+             ^^^^^^^^^^^^
+  File "/Users/elizabethterveen/Desktop/projects/tartan-hacks-25/Backend/utils/textGen.py", line 63, in generateText
+    res = response.content.choices.delta.content
+          ^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/pydantic/main.py", line 886, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}') from exc
+AttributeError: 'ChatCompletionChunk' object has no attribute 'content'
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [26205]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 1 
+prompt_tokens_used: 28 
+total_tokens_used: 29 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 3 
+prompt_tokens_used: 28 
+total_tokens_used: 31 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 5 
+prompt_tokens_used: 28 
+total_tokens_used: 33 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 7 
+prompt_tokens_used: 28 
+total_tokens_used: 35 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 9 
+prompt_tokens_used: 28 
+total_tokens_used: 37 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 11 
+prompt_tokens_used: 28 
+total_tokens_used: 39 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 13 
+prompt_tokens_used: 28 
+total_tokens_used: 41 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 15 
+prompt_tokens_used: 28 
+total_tokens_used: 43 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 17 
+prompt_tokens_used: 28 
+total_tokens_used: 45 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 19 
+prompt_tokens_used: 28 
+total_tokens_used: 47 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 21 
+prompt_tokens_used: 28 
+total_tokens_used: 49 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 23 
+prompt_tokens_used: 28 
+total_tokens_used: 51 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 25 
+prompt_tokens_used: 28 
+total_tokens_used: 53 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 27 
+prompt_tokens_used: 28 
+total_tokens_used: 55 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 29 
+prompt_tokens_used: 28 
+total_tokens_used: 57 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 31 
+prompt_tokens_used: 28 
+total_tokens_used: 59 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 33 
+prompt_tokens_used: 28 
+total_tokens_used: 61 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 35 
+prompt_tokens_used: 28 
+total_tokens_used: 63 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 37 
+prompt_tokens_used: 28 
+total_tokens_used: 65 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 39 
+prompt_tokens_used: 28 
+total_tokens_used: 67 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 41 
+prompt_tokens_used: 28 
+total_tokens_used: 69 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 43 
+prompt_tokens_used: 28 
+total_tokens_used: 71 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 45 
+prompt_tokens_used: 28 
+total_tokens_used: 73 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 47 
+prompt_tokens_used: 28 
+total_tokens_used: 75 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 49 
+prompt_tokens_used: 28 
+total_tokens_used: 77 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 51 
+prompt_tokens_used: 28 
+total_tokens_used: 79 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 53 
+prompt_tokens_used: 28 
+total_tokens_used: 81 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 55 
+prompt_tokens_used: 28 
+total_tokens_used: 83 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 57 
+prompt_tokens_used: 28 
+total_tokens_used: 85 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 59 
+prompt_tokens_used: 28 
+total_tokens_used: 87 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 61 
+prompt_tokens_used: 28 
+total_tokens_used: 89 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 63 
+prompt_tokens_used: 28 
+total_tokens_used: 91 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 65 
+prompt_tokens_used: 28 
+total_tokens_used: 93 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 67 
+prompt_tokens_used: 28 
+total_tokens_used: 95 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 69 
+prompt_tokens_used: 28 
+total_tokens_used: 97 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 71 
+prompt_tokens_used: 28 
+total_tokens_used: 99 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 73 
+prompt_tokens_used: 28 
+total_tokens_used: 101 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 75 
+prompt_tokens_used: 28 
+total_tokens_used: 103 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 77 
+prompt_tokens_used: 28 
+total_tokens_used: 105 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 79 
+prompt_tokens_used: 28 
+total_tokens_used: 107 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 81 
+prompt_tokens_used: 28 
+total_tokens_used: 109 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 83 
+prompt_tokens_used: 28 
+total_tokens_used: 111 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 85 
+prompt_tokens_used: 28 
+total_tokens_used: 113 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 87 
+prompt_tokens_used: 28 
+total_tokens_used: 115 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 89 
+prompt_tokens_used: 28 
+total_tokens_used: 117 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 91 
+prompt_tokens_used: 28 
+total_tokens_used: 119 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 93 
+prompt_tokens_used: 28 
+total_tokens_used: 121 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 95 
+prompt_tokens_used: 28 
+total_tokens_used: 123 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 97 
+prompt_tokens_used: 28 
+total_tokens_used: 125 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 99 
+prompt_tokens_used: 28 
+total_tokens_used: 127 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 101 
+prompt_tokens_used: 28 
+total_tokens_used: 129 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 103 
+prompt_tokens_used: 28 
+total_tokens_used: 131 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 105 
+prompt_tokens_used: 28 
+total_tokens_used: 133 
+
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 106 
+prompt_tokens_used: 28 
+total_tokens_used: 134 
+
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [26256]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 1 
+prompt_tokens_used: 28 
+total_tokens_used: 29 
+
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/Desktop/projects/tartan-hacks-25/Backend/speechAPI.py", line 34, in generate_conversation
+    for r in questionText:
+             ^^^^^^^^^^^^
+  File "/Users/elizabethterveen/Desktop/projects/tartan-hacks-25/Backend/utils/textGen.py", line 64, in generateText
+    logger.info("potential choice from perplexity\n"+choice)
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+TypeError: can only concatenate str (not "Choice") to str
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [26356]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 1 
+prompt_tokens_used: 28 
+total_tokens_used: 29 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content='Hello', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': 'Hello'})
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/Desktop/projects/tartan-hacks-25/Backend/speechAPI.py", line 34, in generate_conversation
+    for r in questionText:
+             ^^^^^^^^^^^^
+  File "/Users/elizabethterveen/Desktop/projects/tartan-hacks-25/Backend/utils/textGen.py", line 67, in generateText
+    res = response.choices[0].message['text']['content']
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'text'
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [26377]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 1 
+prompt_tokens_used: 28 
+total_tokens_used: 29 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content='Hello', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': 'Hello'})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 3 
+prompt_tokens_used: 28 
+total_tokens_used: 31 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' Thank', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': 'Hello Thank'})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 5 
+prompt_tokens_used: 28 
+total_tokens_used: 33 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' you for', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': 'Hello Thank you for'})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 7 
+prompt_tokens_used: 28 
+total_tokens_used: 35 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' reaching out', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': 'Hello Thank you for reaching out'})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 9 
+prompt_tokens_used: 28 
+total_tokens_used: 37 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content='. I', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': 'Hello Thank you for reaching out. I'})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 11 
+prompt_tokens_used: 28 
+total_tokens_used: 39 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' appreciate your', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': 'Hello Thank you for reaching out. I appreciate your'})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 13 
+prompt_tokens_used: 28 
+total_tokens_used: 41 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' interest in', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': 'Hello Thank you for reaching out. I appreciate your interest in'})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 15 
+prompt_tokens_used: 28 
+total_tokens_used: 43 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' working with', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': 'Hello Thank you for reaching out. I appreciate your interest in working with'})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 17 
+prompt_tokens_used: 28 
+total_tokens_used: 45 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' us.', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': 'Hello Thank you for reaching out. I appreciate your interest in working with us.'})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 19 
+prompt_tokens_used: 28 
+total_tokens_used: 47 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' Before we', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': 'Hello Thank you for reaching out. I appreciate your interest in working with us. Before we'})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 21 
+prompt_tokens_used: 28 
+total_tokens_used: 49 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' proceed,', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': 'Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed,'})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 23 
+prompt_tokens_used: 28 
+total_tokens_used: 51 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' could you', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': 'Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you'})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 25 
+prompt_tokens_used: 28 
+total_tokens_used: 53 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' tell me', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': 'Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me'})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 27 
+prompt_tokens_used: 28 
+total_tokens_used: 55 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' a bit', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': 'Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit'})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 29 
+prompt_tokens_used: 28 
+total_tokens_used: 57 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' about your', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': 'Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your'})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 31 
+prompt_tokens_used: 28 
+total_tokens_used: 59 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' background and', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': 'Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and'})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 33 
+prompt_tokens_used: 28 
+total_tokens_used: 61 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' what type', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': 'Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type'})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 35 
+prompt_tokens_used: 28 
+total_tokens_used: 63 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' of role', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': 'Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role'})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 37 
+prompt_tokens_used: 28 
+total_tokens_used: 65 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=" you're", function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 39 
+prompt_tokens_used: 28 
+total_tokens_used: 67 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' interested in', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 41 
+prompt_tokens_used: 28 
+total_tokens_used: 69 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content='? This', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 43 
+prompt_tokens_used: 28 
+total_tokens_used: 71 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' will help', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 45 
+prompt_tokens_used: 28 
+total_tokens_used: 73 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' me better', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 47 
+prompt_tokens_used: 28 
+total_tokens_used: 75 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' understand how', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 49 
+prompt_tokens_used: 28 
+total_tokens_used: 77 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' your skills', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 51 
+prompt_tokens_used: 28 
+total_tokens_used: 79 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' and experiences', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 53 
+prompt_tokens_used: 28 
+total_tokens_used: 81 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' might align', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences might align"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 55 
+prompt_tokens_used: 28 
+total_tokens_used: 83 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' with our', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences might align with our"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 57 
+prompt_tokens_used: 28 
+total_tokens_used: 85 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=" company's", function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences might align with our company's"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 59 
+prompt_tokens_used: 28 
+total_tokens_used: 87 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' needs.', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences might align with our company's needs."})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 61 
+prompt_tokens_used: 28 
+total_tokens_used: 89 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' Additionally,', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences might align with our company's needs. Additionally,"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 63 
+prompt_tokens_used: 28 
+total_tokens_used: 91 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' if you', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences might align with our company's needs. Additionally, if you"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 65 
+prompt_tokens_used: 28 
+total_tokens_used: 93 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' have a', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences might align with our company's needs. Additionally, if you have a"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 67 
+prompt_tokens_used: 28 
+total_tokens_used: 95 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' resume or', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences might align with our company's needs. Additionally, if you have a resume or"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 69 
+prompt_tokens_used: 28 
+total_tokens_used: 97 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' any relevant', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences might align with our company's needs. Additionally, if you have a resume or any relevant"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 71 
+prompt_tokens_used: 28 
+total_tokens_used: 99 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' documents,', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences might align with our company's needs. Additionally, if you have a resume or any relevant documents,"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 73 
+prompt_tokens_used: 28 
+total_tokens_used: 101 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' feel free', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences might align with our company's needs. Additionally, if you have a resume or any relevant documents, feel free"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 75 
+prompt_tokens_used: 28 
+total_tokens_used: 103 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' to share', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences might align with our company's needs. Additionally, if you have a resume or any relevant documents, feel free to share"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 77 
+prompt_tokens_used: 28 
+total_tokens_used: 105 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' them with', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences might align with our company's needs. Additionally, if you have a resume or any relevant documents, feel free to share them with"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 79 
+prompt_tokens_used: 28 
+total_tokens_used: 107 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' me.', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences might align with our company's needs. Additionally, if you have a resume or any relevant documents, feel free to share them with me."})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 81 
+prompt_tokens_used: 28 
+total_tokens_used: 109 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=" Let's", function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences might align with our company's needs. Additionally, if you have a resume or any relevant documents, feel free to share them with me. Let's"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 83 
+prompt_tokens_used: 28 
+total_tokens_used: 111 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' have a', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences might align with our company's needs. Additionally, if you have a resume or any relevant documents, feel free to share them with me. Let's have a"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 85 
+prompt_tokens_used: 28 
+total_tokens_used: 113 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' conversation about', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences might align with our company's needs. Additionally, if you have a resume or any relevant documents, feel free to share them with me. Let's have a conversation about"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 87 
+prompt_tokens_used: 28 
+total_tokens_used: 115 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' how you', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences might align with our company's needs. Additionally, if you have a resume or any relevant documents, feel free to share them with me. Let's have a conversation about how you"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 89 
+prompt_tokens_used: 28 
+total_tokens_used: 117 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' might fit', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences might align with our company's needs. Additionally, if you have a resume or any relevant documents, feel free to share them with me. Let's have a conversation about how you might fit"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 91 
+prompt_tokens_used: 28 
+total_tokens_used: 119 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content=' in here', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason=None, index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences might align with our company's needs. Additionally, if you have a resume or any relevant documents, feel free to share them with me. Let's have a conversation about how you might fit in here"})
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 93 
+prompt_tokens_used: 28 
+total_tokens_used: 121 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(delta=ChoiceDelta(content='.', function_call=None, refusal=None, role='assistant', tool_calls=None), finish_reason='stop', index=0, logprobs=None, message={'role': 'assistant', 'content': "Hello Thank you for reaching out. I appreciate your interest in working with us. Before we proceed, could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how your skills and experiences might align with our company's needs. Additionally, if you have a resume or any relevant documents, feel free to share them with me. Let's have a conversation about how you might fit in here."})
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [26401]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 108 
+prompt_tokens_used: 28 
+total_tokens_used: 136 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Hello Thank you for reaching out. I appreciate your enthusiasm, but let's take a moment to discuss your qualifications and how they might align with our current or future opportunities. Could you tell me a bit about your background and what type of role you're interested in? This will help me better understand how we might be able to assist you. \n\nAlso, have you had a chance to look at our company's current job postings or would you like some information on how to apply for positions that might be a good fit for you?", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/Desktop/projects/tartan-hacks-25/Backend/speechAPI.py", line 28, in generate_conversation
+    questionText = textGen.generateText(
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/Desktop/projects/tartan-hacks-25/Backend/utils/textGen.py", line 66, in generateText
+    res = response.choices[0].message['content']
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'ChatCompletionMessage' object is not subscriptable
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [26465]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 288 
+prompt_tokens_used: 28 
+total_tokens_used: 316 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Hello Thank you for reaching out. I'm happy to chat with you about potential job opportunities. However, I need to clarify that I'm not in a position to offer a job directly. Instead, I can guide you through some strategies to help you find a job that suits your skills and interests.\n\nCould you tell me a bit about your background, skills, and what kind of job you're looking for? This will help me provide more tailored advice.\n\nAdditionally, here are some general tips that might be helpful:\n\n1. **Gather Your Information**: Make sure you have all your work history, skills, education, and references ready. This will help you prepare a strong resume and cover letter[1].\n\n2. **Search Online**: Use job search engines like LinkedIn, Indeed, and Glassdoor to find opportunities that match your criteria[1].\n\n3. **Network**: Share your job search with friends and family, and consider attending job fairs or networking events[1].\n\n4. **Consider What You Love**: Think about what motivates you and what kind of work environment you prefer. This can help you find a job that you'll truly enjoy[2].\n\n5. **Develop Your Skills**: If you're looking to transition into a new field, consider taking courses or getting certifications to enhance your skills[2].\n\nLet's discuss these points further and see how they might apply to your situation. How does that sound?", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [26536]

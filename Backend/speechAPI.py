@@ -7,26 +7,40 @@ app = FastAPI()
 
 ''' DATA CLASSES '''
 class ConvoConfig(BaseModel):
-    pass
+    agentRole: str
+    agentTone: str
+    userRole: str
+    userQuery: str
+
 
 class UserAudio(BaseModel):
     pass
 
-''' ENDPOINTS '''
 
+
+''' ENDPOINTS '''
 @app.post("/gen-convo")
-def generate_conversation(config: ConvoConfig):
+async def generate_conversation(config: ConvoConfig):
     '''
     input: enviornment configuration
     returns: AudioFile (.wav type)
     '''
-    questionText = textGen.generateText()
+    questionText = textGen.generateText(
+        config.agentRole,
+        config.agentTone,
+        config.userRole,
+        config.userQuery
+    )
+    if not questionText['ok']:
+        print("error loading question text.\n")
+        print(questionText['error'])
+        return {"ok": False, "error": questionText['error'],"data":""}
     questionAudio = audioGen.generateAudio()
     pass
 
 
 @app.post("/store-user-resp")
-def store_user_response(userResponse: UserAudio):
+async def store_user_response(userResponse: UserAudio):
     '''
     input: user audio object
     returns: transcription status update
