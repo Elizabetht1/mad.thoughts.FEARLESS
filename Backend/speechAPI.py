@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI,Response
 from pydantic import BaseModel
 
 from utils import (audioGen,textGen,audioStore)
@@ -20,7 +20,7 @@ class UserAudio(BaseModel):
 
 ''' ENDPOINTS '''
 @app.post("/gen-convo")
-async def generate_conversation(config: ConvoConfig):
+async def generate_conversation(config: ConvoConfig)->str:
     '''
     input: enviornment configuration
     returns: AudioFile (.wav type)
@@ -36,7 +36,7 @@ async def generate_conversation(config: ConvoConfig):
         print(questionText['error'])
         return {"ok": False, "error": questionText['error'],"data":""}
     questionAudio = audioGen.generateAudio(questionText['text'])
-    return {"ok":True,"error":"","data":""}
+    return Response(content=questionAudio,media_type="audio/mp3")
 
 
 @app.post("/store-user-resp")
