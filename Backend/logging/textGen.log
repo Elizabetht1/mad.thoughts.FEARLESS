@@ -3131,374 +3131,14 @@ INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
 INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
 INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 139 
+completion_tokens_used: 162 
 prompt_tokens_used: 24 
-total_tokens_used: 163 
+total_tokens_used: 186 
 
 INFO:utils.textGen:potential choice from perplexity
 
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about your job aspirations. I'm here to help and provide information that might be useful to you.\n\nTo start, could you tell me a bit about yourself? What kind of job are you looking for, and what skills or experiences do you have that you think would be relevant? Are you interested in a specific industry or role? \n\nAlso, are you open to different locations, or do you have a preference for a particular area? \n\nLastly, what are your long-term career goals, and how does this job fit into your overall vision? \n\nFeel free to share as much or as little as you like, and we can go from there", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Of course I'd be happy to engage in a conversation with you. Let's start by getting to know a bit more about you and what you're looking for in a job.\n\n**Can you tell me a little about your background and what kind of role you're interested in?** This will help me better understand how I can assist you in finding a suitable position. \n\nAlso, are there any specific industries or sectors that appeal to you? This could range from retail, tech, healthcare, or anything else that aligns with your interests and skills. \n\nLastly, do you have any specific requirements for the job, such as remote work options, flexible hours, or a particular location? \n\nLet's chat about these details and see how we can tailor our conversation to best support your job search", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [50179]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 98 
-prompt_tokens_used: 24 
-total_tokens_used: 122 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Of course Let's have a friendly conversation. I'm here to help facilitate a mock interview or discuss potential job opportunities. Could you tell me a bit about yourself and what kind of job you're interested in? This will help us tailor the conversation to your needs and interests. \n\nAlso, are there any specific industries or roles you're considering? This could be anything from retail, tech, healthcare, or something else entirely. Let me know, and we can explore options together", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [50303]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 125 
-prompt_tokens_used: 24 
-total_tokens_used: 149 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Let's have a friendly conversation about your job search. I'm here to help you explore opportunities that might fit your skills and interests.\n\n**Can you tell me a bit about yourself?** What kind of job are you looking for, and what skills or experiences do you think would make you a strong candidate?\n\nAlso, are there any specific industries or roles that interest you? For example, some people are interested in creative fields like design or writing, while others might prefer more technical roles like engineering or data analysis.\n\nLastly, are you open to different types of work arrangements, such as remote work or part-time positions?", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Finished server process [50330]
-ERROR:uvicorn.error:Traceback (most recent call last):
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/asyncio/runners.py", line 195, in run
-    return runner.run(main)
-           ^^^^^^^^^^^^^^^^
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/asyncio/runners.py", line 118, in run
-    return self._loop.run_until_complete(task)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "uvloop/loop.pyx", line 1512, in uvloop.loop.Loop.run_until_complete
-  File "uvloop/loop.pyx", line 1505, in uvloop.loop.Loop.run_until_complete
-  File "uvloop/loop.pyx", line 1379, in uvloop.loop.Loop.run_forever
-  File "uvloop/loop.pyx", line 557, in uvloop.loop.Loop._run
-  File "uvloop/loop.pyx", line 476, in uvloop.loop.Loop._on_idle
-  File "uvloop/cbhandles.pyx", line 83, in uvloop.loop.Handle._run
-  File "uvloop/cbhandles.pyx", line 63, in uvloop.loop.Handle._run
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/server.py", line 69, in serve
-    with self.capture_signals():
-         ^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/contextlib.py", line 144, in __exit__
-    next(self.gen)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/server.py", line 330, in capture_signals
-    signal.raise_signal(captured_signal)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/asyncio/runners.py", line 157, in _on_sigint
-    raise KeyboardInterrupt()
-KeyboardInterrupt
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 700, in lifespan
-    await receive()
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/lifespan/on.py", line 137, in receive
-    return await self.receive_queue.get()
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/asyncio/queues.py", line 158, in get
-    await getter
-asyncio.exceptions.CancelledError
-
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 82 
-prompt_tokens_used: 24 
-total_tokens_used: 106 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Of course, let's have a friendly conversation about your job aspirations. I'm here to help you explore opportunities and discuss what you're looking for in a role.\n\n**Can you tell me a bit about yourself? What kind of job are you interested in?**\n\nAlso, are there any specific industries or roles that you've been considering? This will help us tailor our conversation to your interests and goals.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [50380]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 102 
-prompt_tokens_used: 24 
-total_tokens_used: 126 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about your job search. I'm here to help and support you in any way I can.\n\n**Can you tell me a little bit about yourself?** What kind of job are you looking for, and what skills or experiences do you have that you think would be relevant?\n\nAlso, **what motivates you** in your career, and **what kind of work environment** do you prefer? This will help me understand your needs better and provide more tailored advice.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [50480]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 131 
-prompt_tokens_used: 24 
-total_tokens_used: 155 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about job opportunities. I'm here to help you explore potential roles that might suit your skills and interests.\n\nTo start, could you tell me a bit about yourself? What kind of job are you looking for, and what skills or experiences do you have that you think would be valuable in a role? \n\nAlso, are you open to different types of positions, such as part-time, full-time, or freelance work? \n\nLastly, is there a specific industry or sector that interests you the most? \n\nLet's chat about these details to see how we can help you find a job that fits your needs.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [50501]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 127 
-prompt_tokens_used: 24 
-total_tokens_used: 151 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a conversation about your job aspirations. I'm here to help you explore opportunities and discuss what you're looking for in a career.\n\n**Can you tell me a bit about yourself?** What kind of job are you interested in, and what skills or experiences do you have that you think would be valuable in that role?\n\nAlso, are you open to different types of positions, such as part-time, full-time, or freelance work? And are there any specific industries or sectors that interest you? \n\nLet's chat about your goals and see how we can help you find a job that fits your needs", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [50548]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 100 
-prompt_tokens_used: 24 
-total_tokens_used: 124 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about your job aspirations. Could you tell me a bit about yourself and what kind of job you're looking for? What are your interests, skills, or any specific industries you're interested in? This will help me understand how I can assist you better. \n\nAlso, are you open to different types of roles, such as part-time, full-time, or freelance work? And are there any specific locations you prefer? \n\nLet's chat about it", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [50609]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 149 
-prompt_tokens_used: 24 
-total_tokens_used: 173 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about your job aspirations. Here are a few questions to get us started:\n\n1. **What type of job are you looking for?** Are you interested in a specific industry or role?\n\n2. **What skills do you have?** Share any relevant skills or experiences you think would be valuable in a job.\n\n3. **What are your long-term career goals?** Are there any specific positions or industries you hope to be in five years from now?\n\n4. **Are you open to different locations?** Would you prefer to work in a specific city or are you flexible about moving?\n\nLet's chat about these points and see how we can help you find a job that fits your needs", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [50660]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 70 
-prompt_tokens_used: 24 
-total_tokens_used: 94 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Of course Let's have a friendly conversation about your job aspirations. I'm here to help you explore opportunities and discuss what you're looking for in a role.\n\nTo start, could you tell me a bit about yourself? What kind of job are you interested in, and what skills or experiences do you think would make you a strong candidate?", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [51040]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 197 
-prompt_tokens_used: 1197 
-total_tokens_used: 1394 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like you're looking for a job, and I can provide some guidance on where to find opportunities. Here are a few options:\n\n1. **Pretty Please Fashion**:\n   - They have a few job openings, including a **Hat Artist** in Palm Desert, CA, and a **Store Manager** in Coronado, CA. Another position is for a **Delivery Driver/Warehouse** in Scottsdale, AZ[1].\n\n2. **Pretty Please Aesthetics**:\n   - Currently, they are not hiring, but you can submit your resume for future consideration. They are based in Sacramento and Roseville[3].\n\n3. **General Job Search**:\n   - You can explore a wide range of jobs on platforms like Indeed, which lists numerous positions across different industries, including retail, beauty, and more[2].\n\nIf you're interested in a specific field or location, you might want to tailor your search accordingly. Good luck with your job search", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [51379]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 147 
-prompt_tokens_used: 24 
-total_tokens_used: 171 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about your job search. I'm here to help and support you in finding the right opportunity.\n\n**Interviewer:** Hi there It's great to meet you. Can you tell me a bit about yourself and what kind of job you're looking for? What are your interests and skills that you think would be valuable in a role?\n\n**Follow-up Questions:**\n- What specific industry or sector are you interested in?\n- Do you have any previous work experience or education that you think is relevant?\n- Are there any particular skills or areas you'd like to develop further in your career?\n\nLet's chat about these and see how we can help you find a job that fits your goals", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [51395]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 194 
-prompt_tokens_used: 24 
-total_tokens_used: 218 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about your job aspirations. Here's how we can approach this:\n\n1. **Introduction**: Could you tell me a bit about yourself? What kind of job are you interested in, and what skills or experiences do you bring to the table?\n\n2. **Job Preferences**: Are you looking for something specific, like a role in a particular industry or a certain type of work environment?\n\n3. **Skills and Strengths**: What are your greatest strengths and skills that you think would be valuable in a job?\n\n4. **Career Goals**: What are your long-term career goals, and how does this job fit into your overall vision?\n\n5. **Availability and Flexibility**: Are you available to start immediately, or do you have specific timing in mind? Are you open to different types of employment, such as part-time or freelance work?\n\nLet's explore these questions together to see how we can find a good fit for you", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [51473]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 156 
-prompt_tokens_used: 24 
-total_tokens_used: 180 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about your job aspirations. I'm here to help facilitate a discussion that might lead to some insights or opportunities.\n\n## Conversation Starters\n\n1. **Background and Interests**: Could you tell me a bit about your educational background and what kind of work or industry you're interested in?\n\n2. **Skills and Experience**: What skills or experiences do you think would be most valuable in your desired role?\n\n3. **Job Preferences**: Are you looking for something specific like remote work, part-time, or full-time opportunities?\n\n4. **Career Goals**: What are your short-term and long-term career goals?\n\n5. **Available Opportunities**: Are there any specific job openings or companies you've been considering?\n\nLet's explore these topics together", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [51651]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 173 
-prompt_tokens_used: 24 
-total_tokens_used: 197 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about job opportunities. I'd like to explore what kind of role you're interested in and see if there's a good fit.\n\n1. **What type of job are you looking for?** Are you interested in a specific industry or role, such as retail, tech, or something creative?\n\n2. **What skills do you bring to the table?** Highlighting your strengths and experiences can help us narrow down potential opportunities.\n\n3. **Are you open to different locations?** Some jobs might require relocation or remote work. Let's discuss your preferences.\n\n4. **What are your long-term career goals?** Understanding where you want to be in the future can help guide our conversation about current opportunities.\n\nLet's chat about these points and see how we can assist you in finding a job that suits your needs", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [51689]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 90 
-prompt_tokens_used: 24 
-total_tokens_used: 114 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about your job aspirations. I'm here to help you explore potential opportunities.\n\nTo start, could you tell me a bit about yourself? What kind of job are you interested in, and what skills or experiences do you think would make you a strong candidate? \n\nAlso, are you open to different types of roles or industries, or do you have something specific in mind? \n\nLet's chat about it", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [51757]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 172 
-prompt_tokens_used: 24 
-total_tokens_used: 196 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Of course Let's have a friendly conversation. I'm here to help facilitate a mock interview or discuss job opportunities with you. How can I assist you today? Are you looking for advice on finding a job, or would you like to practice an interview scenario? \n\nHere are a few options we could explore:\n\n1. **Job Search Tips**: We could discuss strategies for finding the right job, including resume building, networking, and interview preparation.\n   \n2. **Mock Interview**: If you're preparing for an interview, we can simulate a real interview scenario. This can help you practice answering common interview questions and improve your confidence.\n\n3. **Career Advice**: If you're unsure about which career path to take, we can explore different fields and discuss what might be a good fit for you.\n\nLet me know which direction you'd like to take", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [52162]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 98 
-prompt_tokens_used: 24 
-total_tokens_used: 122 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about your job aspirations. I'm here to help you explore opportunities that might be a good fit for you.\n\nTo start, could you tell me a bit about yourself? What kind of job are you interested in, and what skills or experiences do you think would make you a strong candidate? \n\nAlso, are there any specific industries or roles that you're particularly drawn to? This will help us narrow down some options that might suit you well.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-ERROR:uvicorn.error:Exception in ASGI application
-Traceback (most recent call last):
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
-    result = await app(  # type: ignore[func-returns-value]
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
-    return await self.app(scope, receive, send)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
-    await super().__call__(scope, receive, send)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
-    await self.middleware_stack(scope, receive, send)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
-    raise exc
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
-    await self.app(scope, receive, _send)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
-    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-    raise exc
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-    await app(scope, receive, sender)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 715, in __call__
-    await self.middleware_stack(scope, receive, send)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 735, in app
-    await route.handle(scope, receive, send)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
-    await self.app(scope, receive, send)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
-    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-    raise exc
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-    await app(scope, receive, sender)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
-    response = await f(request)
-               ^^^^^^^^^^^^^^^^
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
-    raw_response = await run_endpoint_function(
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
-    return await dependant.call(**values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/elizabethterveen/Desktop/projects/tartan-hacks-25/Backend/speechAPI.py", line 60, in transcribe_user_speech
-    transcription = audioStore.transcribeAudio(f"./user_audio_files/{file.filename}")
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/elizabethterveen/Desktop/projects/tartan-hacks-25/Backend/utils/audioStore.py", line 35, in transcribeAudio
-    phrases = silence.split_on_silence(audio, min_silence_len=600, silence_thresh=-32)
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/pydub/silence.py", line 150, in split_on_silence
-    in detect_nonsilent(audio_segment, min_silence_len, silence_thresh, seek_step)
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/pydub/silence.py", line 86, in detect_nonsilent
-    silent_ranges = detect_silence(audio_segment, min_silence_len, silence_thresh, seek_step)
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/pydub/silence.py", line 26, in detect_silence
-    silence_thresh = db_to_float(silence_thresh) * audio_segment.max_possible_amplitude
-                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'numpy.ndarray' object has no attribute 'max_possible_amplitude'
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 131 
-prompt_tokens_used: 24 
-total_tokens_used: 155 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about your job aspirations. I'm here to help facilitate a discussion that might lead to some great opportunities.\n\nTo start, could you tell me a bit about yourself? What kind of job or industry are you interested in? What skills or experiences do you bring to the table? \n\nAlso, are you open to different types of roles, such as part-time, full-time, or freelance work? \n\nLastly, what are your long-term career goals, and how does this job fit into your overall vision? \n\nFeel free to share as much or as little as you like, and we can go from there", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [52213]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 83 
-prompt_tokens_used: 24 
-total_tokens_used: 107 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Of course Let's have a friendly conversation. I'm here to help you explore potential job opportunities. Could you tell me a bit about yourself? What kind of job are you interested in, and what skills or experiences do you have that might be relevant? \n\nAlso, are you open to different types of roles or industries, or do you have something specific in mind? \n\nLet's chat about it", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [52410]
 INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
 INFO:utils.textGen:received a response from perplexity. 
 completion_tokens_used: 91 
@@ -3507,206 +3147,75 @@ total_tokens_used: 115
 
 INFO:utils.textGen:potential choice from perplexity
 
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about your job aspirations. I'm here to help you explore opportunities and discuss what you're looking for in a role.\n\n**Can you tell me a bit about yourself?** What kind of job are you interested in, and what skills or experiences do you think would make you a strong candidate?\n\nAlso, are there any specific industries or sectors that interest you? This could help us narrow down some potential opportunities.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly, let's have a friendly conversation about your job aspirations. I'm here to help you explore opportunities that might fit your skills and interests.\n\nCould you start by telling me a bit about yourself? What kind of job are you looking for, and what skills or experiences do you think would make you a strong candidate? \n\nAlso, are there any specific industries or roles that interest you? This will help us narrow down some potential options for you.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-ERROR:uvicorn.error:Exception in ASGI application
-Traceback (most recent call last):
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
-    result = await app(  # type: ignore[func-returns-value]
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
-    return await self.app(scope, receive, send)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
-    await super().__call__(scope, receive, send)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
-    await self.middleware_stack(scope, receive, send)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
-    raise exc
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
-    await self.app(scope, receive, _send)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
-    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-    raise exc
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-    await app(scope, receive, sender)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 715, in __call__
-    await self.middleware_stack(scope, receive, send)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 735, in app
-    await route.handle(scope, receive, send)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
-    await self.app(scope, receive, send)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
-    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-    raise exc
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
-    await app(scope, receive, sender)
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
-    response = await f(request)
-               ^^^^^^^^^^^^^^^^
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
-    raw_response = await run_endpoint_function(
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
-    return await dependant.call(**values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/elizabethterveen/Desktop/projects/tartan-hacks-25/Backend/speechAPI.py", line 60, in transcribe_user_speech
-    transcription = audioStore.transcribeAudio(f"./user_audio_files/{file.filename}")
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/elizabethterveen/Desktop/projects/tartan-hacks-25/Backend/utils/audioStore.py", line 63, in transcribeAudio
-    phrase.export(phrase_audio_file_path, bitrate='256k', format="wav")
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/pydub/audio_segment.py", line 867, in export
-    out_f, _ = _fd_or_path_or_tempfile(out_f, 'wb+')
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/pydub/utils.py", line 60, in _fd_or_path_or_tempfile
-    fd = open(fd, mode=mode)
-         ^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../phrases/phrase0.wav'
 INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
 INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 93 
+completion_tokens_used: 145 
 prompt_tokens_used: 24 
-total_tokens_used: 117 
+total_tokens_used: 169 
 
 INFO:utils.textGen:potential choice from perplexity
 
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Of course Let's have a friendly conversation about your job aspirations. I'm here to help you explore opportunities and discuss what you're looking for in a role.\n\nTo start, could you tell me a bit about yourself? What kind of job are you interested in, and what skills or experiences do you think would make you a strong candidate? \n\nAlso, are you open to different types of positions or industries, or do you have something specific in mind?", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about your job search. I'm here to help and support you in any way I can.\n\n**Interviewer:** Hi there It's great to meet you. Could you tell me a bit about yourself and what kind of job you're looking for? What are your interests and skills?\n\n**Follow-up Questions:**\n1. What specific industry or role are you interested in?\n2. Do you have any relevant experience or education that could be beneficial for the job you're seeking?\n3. Are you open to different types of work environments, such as remote or in-office positions?\n\nLet's chat about these aspects and see how we can assist you in finding the right opportunity", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [52444]
 INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
 INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 276 
+completion_tokens_used: 111 
 prompt_tokens_used: 24 
-total_tokens_used: 300 
+total_tokens_used: 135 
 
 INFO:utils.textGen:potential choice from perplexity
 
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about job opportunities. Here's a neutral and engaging approach:\n\n---\n\n**Interviewer:** Hi there Thank you for coming in today. I understand you're looking for a job, and I'd be happy to help explore some options with you. Can you tell me a bit about yourself and what kind of job you're interested in?\n\n**Interviewee Response:** (Insert their response here)\n\n**Interviewer Follow-up:** That sounds great Let's see if we can match your skills and interests with some available positions. Are you open to working in different industries, or do you have a specific sector in mind?\n\n**Interviewee Response:** (Insert their response here)\n\n**Interviewer Follow-up:** Excellent Based on what you've shared, I think we might have a few opportunities that could be a good fit. Let me show you some job listings that might interest you. (Present some relevant job listings)\n\n**Interviewee Response:** (Insert their response here)\n\n**Interviewer Conclusion:** It was great chatting with you If you have any more questions or would like to proceed with any of these opportunities, feel free to let me know. We're here to help.\n\n---\n\nThis approach is designed to be friendly and exploratory, helping to identify the interviewee's interests and skills while offering support in finding a suitable job.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [52520]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 39 
-prompt_tokens_used: 1216 
-total_tokens_used: 1255 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like your sentence is incomplete or unclear. Could you please provide more context or clarify what you are trying to express? I'm here to help with any information or assistance you need.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Of course Let's have a friendly conversation about potential job opportunities. I'd love to learn more about your interests and skills to see if there's a good fit for you.\n\nCan you tell me a bit about yourself? What kind of job are you looking for, and what skills or experiences do you think would make you a strong candidate? \n\nAlso, are there any specific industries or roles that interest you? For example, are you more inclined towards creative fields, customer service, or perhaps something in technology? \n\nLet's chat about it", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
 INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
 INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 36 
-prompt_tokens_used: 1207 
-total_tokens_used: 1243 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like your query is incomplete. Could you please provide more details or clarify what you are asking for? I'm here to help with any information or assistance you need.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 31 
-prompt_tokens_used: 1207 
-total_tokens_used: 1238 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like your query is incomplete. Could you please provide more details or clarify what you are asking? I'll do my best to assist you.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [52737]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 114 
-prompt_tokens_used: 82 
-total_tokens_used: 196 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Hello It's great to meet you. You're a computer science major looking for employment opportunities, and you're here today to explore potential job openings with our company. You seem eager to find a position that aligns with your skills and interests.\n\nTo summarize, you've expressed your enthusiasm for being employed and are hoping to find a suitable role within our organization. Let's take a moment to discuss your background and how your skills might fit into our current projects. Can you tell me a bit more about your experiences and what you're most interested in working on?", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [52839]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 153 
-prompt_tokens_used: 72 
-total_tokens_used: 225 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It sounds like you're preparing for a speaking engagement and are concerned about enunciating well as you're also in the process of job hunting. You're asking if I can transcribe your audio, possibly to help you review your speech or improve your delivery.\n\nTo address your request, there are several options available for transcribing audio. You could consider using services like TranscribeMe, Scribie, or Otter.ai, which offer high-quality transcription services. Alternatively, if you prefer to do it yourself, there are free tools like OTranscribe or Express Scribe that you can use.\n\nLet's focus on how you're feeling about your speaking engagement and job search. How do you think transcribing your audio might help you prepare or improve your performance?", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [52974]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 105 
-prompt_tokens_used: 57 
-total_tokens_used: 162 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like you're interested in discussing debugging queries, possibly in the context of database management or other systems. Could you please elaborate on what specific aspect of debugging queries you'd like to explore? Are you looking at SQL queries, debugging tools like Chalk, or perhaps issues with chatbot responses in platforms like Yext? This will help me better understand your query and provide a more tailored response. \n\nTo summarize, you seem to be asking about debugging queries, but I'd like more details to assist you effectively.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [53040]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 100 
-prompt_tokens_used: 54 
-total_tokens_used: 154 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It sounds like you're concerned about an issue related to audio files. You mentioned that you think there might be a problem with how audio files are handled, and you're worried that things are moving quickly. Could you elaborate a bit more on what specifically is causing your concern? What kind of issues are you experiencing with audio files? \n\nTo summarize, you believe there's an issue with audio files, possibly related to their handling or playback, and you're feeling a sense of urgency about it.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [53094]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 181 
-prompt_tokens_used: 55 
-total_tokens_used: 236 
-
-INFO:utils.textGen:potential choice from perplexity
-
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='It sounds like you\'re expressing a bit of self-deprecation, which is a common way people use humor or humility to connect with others. You mentioned hoping your contribution helps, but then you jokingly attributed any potential shortcomings to your own incompetence. This kind of self-deprecation can be a way to appear more relatable or likable by acknowledging potential flaws in a lighthearted manner.\n\nTo continue the conversation, I might say something like: "Thank you for sharing that. It\'s great that you\'re willing to be open and honest. Can you tell me more about what you\'re hoping to achieve or discuss today?" This approach acknowledges their sentiment while gently steering the conversation forward. \n\n**Summary of what you said:**\n- You\'re hoping your contribution will be helpful.\n- You jokingly referred to yourself as incompetent, using self-deprecation as a form of humor or humility.', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [53184]
-INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
-INFO:utils.textGen:received a response from perplexity. 
-completion_tokens_used: 94 
-prompt_tokens_used: 57 
+completion_tokens_used: 127 
+prompt_tokens_used: 24 
 total_tokens_used: 151 
 
 INFO:utils.textGen:potential choice from perplexity
 
-INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='It seems like you\'re emphasizing that this is a final test. Could you elaborate on what you mean by "this is one final test"? Are you referring to a specific examination or assessment, or is there another context you\'d like to discuss?\n\nTo summarize, you\'ve stated that there is a final test, but you haven\'t specified the nature or context of this test. If you could provide more details, I\'d be happy to engage further in the conversation.', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about job opportunities. I'm here to help you explore potential roles that might suit your skills and interests.\n\nTo start, could you tell me a bit about yourself? What kind of job are you looking for? Are you interested in any specific industry or field? \n\nAlso, are you open to different types of positions, such as part-time or full-time, or do you have a preference? \n\nLastly, what skills or experiences do you think would make you a strong candidate for a job? \n\nLet's chat about these details and see how we can help you find a great fit", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
-INFO:uvicorn.error:Shutting down
-INFO:uvicorn.error:Waiting for application shutdown.
-INFO:uvicorn.error:Application shutdown complete.
-INFO:uvicorn.error:Finished server process [53255]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 86 
+prompt_tokens_used: 24 
+total_tokens_used: 110 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about your job aspirations. I'm here to help and support you in your job search.\n\nTo start, could you tell me a bit about yourself? What kind of job are you looking for, and what skills or experiences do you think would make you a strong candidate? \n\nAlso, are there any specific industries or roles that interest you? This will help us explore potential opportunities together.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 296 
+prompt_tokens_used: 24 
+total_tokens_used: 320 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='Certainly Let\'s have a friendly conversation about your job aspirations. \n\n**Interviewer:** Hi there Thank you for coming in today. I understand you\'re looking for a job, and you\'ve expressed that with a bit of humor by saying "give me a job pretty please." Can you tell me a little bit about yourself and what kind of job you\'re interested in?\n\n**Interviewee:** (Your response here)\n\n**Interviewer:** That\'s great It sounds like you have some interesting skills and experiences. What do you think are your strengths that would make you a strong candidate for a position?\n\n**Interviewee:** (Your response here)\n\n**Interviewer:** Excellent We\'re always looking for people with a positive attitude and a willingness to learn. Are there any specific industries or roles that you\'re particularly interested in or have experience with?\n\n**Interviewee:** (Your response here)\n\n**Interviewer:** That\'s really helpful to know. We\'ll definitely consider your preferences as we discuss potential opportunities. Do you have any questions about the types of jobs we typically offer or the company culture?\n\n**Interviewee:** (Your response here)\n\n**Interviewer:** Great questions I\'m happy to answer those for you. We offer a variety of roles across different departments, and our company culture is very supportive and collaborative. We encourage creativity and growth within the team.\n\nLet\'s continue this conversation and see how we can match your skills and interests with our available positions', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 102 
+prompt_tokens_used: 24 
+total_tokens_used: 126 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Let's have a friendly conversation about your job search. I'm here to help you explore opportunities that might be a good fit for you.\n\n**Can you tell me a bit about yourself?** What kind of job are you looking for? Are there any specific industries or roles that interest you?\n\nAlso, do you have any relevant experience or skills that you think would be valuable in your next position? \n\nLastly, are you open to different types of work environments, such as remote or in-office positions?", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 296 
+prompt_tokens_used: 24 
+total_tokens_used: 320 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about your job aspirations. I'm here to help you explore potential opportunities.\n\n**Interviewer:** Hi there Thanks for coming in today. Can you tell me a bit about yourself and what kind of job you're looking for? What are your interests and skills?\n\n**Interviewee Response:** (Please respond with your background, interests, and the type of job you're interested in.)\n\n**Interviewer Follow-Up:** Great, thank you for sharing that Based on what you've told me, here are a few job types that might suit you:\n\n1. **Retail Sales Associate:** If you enjoy interacting with people and have a flair for sales, this could be a good fit. Many boutiques and stores are hiring sales associates.\n\n2. **Creative Roles:** If you have a creative side, roles like makeup artist, floral designer, or even a stylist might be up your alley.\n\n3. **Customer Service:** If you're good with people and enjoy helping others, customer service roles could be a great option.\n\nLet me know if any of these resonate with you, or if you have something else in mind.\n\n**Interviewee Response:** (Please respond with your thoughts on these options or if you have another direction in mind.)\n\n**Interviewer Follow-Up:** Excellent Let's explore those options further. I can provide more details about each role and see if we can find a good match for you. How does that sound?", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
