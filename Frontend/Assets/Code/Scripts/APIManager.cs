@@ -20,7 +20,7 @@ public class APIManager : MonoBehaviour
 
 
     //HTTP client 
-    public string ApiAdress = "http://127.0.0.1:8000";
+    private string ApiAdress = "http://127.0.0.1:8000";
 
     private class GenConvoReq{
         private string agentRole;
@@ -33,6 +33,7 @@ public class APIManager : MonoBehaviour
 
     private void Start() {
         Debug.Log("I am alive!");
+        StartCoroutine(postGenQuestionReq());
         player.OnPlayerSpoke += OnPlayerSpoke;
     }
 
