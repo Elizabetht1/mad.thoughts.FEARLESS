@@ -15,6 +15,7 @@ public class APIManager : MonoBehaviour
     public event EventHandler<NPCResponseArgs> OnNPCResponse;
 
     [SerializeField] private Player player;
+    [SerializeField] private AudioSource audioSource;
 
     private void Start() {
         player.OnPlayerSpoke += OnPlayerSpoke;
@@ -22,7 +23,8 @@ public class APIManager : MonoBehaviour
 
     private void OnPlayerSpoke(object sender, Player.PlayerSpokeArgs e) {
         Debug.Log("player said something");
-        
+        audioSource.clip = e.audioClip;
+        audioSource.Play();
         // convert audio clip to wav file
         // make a post request, sending wav file
     }
