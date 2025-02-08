@@ -144,7 +144,7 @@ public class APIManager : MonoBehaviour
             }
         }
         string audioData_str = System.Text.Encoding.UTF8.GetString(audioData);
-        UnityWebRequest.Post(ApiAdress, audioData_str, "audio/x-wav")
+        UnityWebRequest.Post(ApiAdress, audioData_str, "audio/x-wav");
     }
     
 
