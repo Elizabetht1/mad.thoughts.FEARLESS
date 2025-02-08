@@ -1,9 +1,10 @@
 from fastapi import FastAPI,Response
 from pydantic import BaseModel
-
+from fastapi.staticfiles import StaticFiles
 from utils import (audioGen,textGen,audioStore)
 
 app = FastAPI()
+app.mount("/assets", StaticFiles(directory="./assets"), name="assets")
 
 ''' DATA CLASSES '''
 class ConvoConfig(BaseModel):
@@ -15,6 +16,7 @@ class ConvoConfig(BaseModel):
 
 class UserAudio(BaseModel):
     pass
+
 
 
 
@@ -35,8 +37,10 @@ async def generate_conversation(config: ConvoConfig)->str:
         print("error loading question text.\n")
         print(questionText['error'])
         return {"ok": False, "error": questionText['error'],"data":""}
-    questionAudio = audioGen.generateAudio(questionText['text'])
-    return Response(content=questionAudio,media_type="audio/mp3")
+    questionAudioURL = audioGen.generateAudio(questionText['text'])
+    
+    # resp = Response(content=questionAudio,media_type="audio/mp3")
+    return Response(content=questionAudioURL)
 
 
 @app.post("/store-user-resp")
