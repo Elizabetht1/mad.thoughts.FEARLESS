@@ -30,8 +30,7 @@ public class APIManager : MonoBehaviour
         public string userQuery;
     }
 
-
-    [SerializeField] private Player player;=======
+    [SerializeField] private Player player;
     [SerializeField] private AudioSource audioSource;
 
     public int sampleRate = 44100;  // Common sample rate
