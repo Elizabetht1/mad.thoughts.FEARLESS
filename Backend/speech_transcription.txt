@@ -1,0 +1,33 @@
+audio transcription: 
+gpt response: response
+
+audio transcription:  what's going on,
+gpt response: response
+
+audio transcription:  I'm, be a point, other,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  hello how's it going I'm just a job candidate who wants to be employed, and that's why I'm interviewing, I'm a computer science major with, so you should really, please tell me that you have a job that you're,
+gpt response: response
+
+audio transcription:  I'm doing a speaking, I'm sorry and I'm I'm trying to get a job and I'm trying to enunciate well please tell me you can transcribe my audio and please,
+gpt response: response
+
+audio transcription:  this is another attempt at what's going wrong and debugging, just try to make sure that the received user query matches the,
+gpt response: response
+
+audio transcription:  how's it going I think this is an issue with how audio files, but I fear we're rapidly,
+gpt response: response
+
+audio transcription:  how's it going I'm speaking I sincerely hope this helps and it's just cuz I'm incompetent and naming,
+gpt response: response
+
+audio transcription:  this is one final test,
+gpt response: response
+

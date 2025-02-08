@@ -21,7 +21,7 @@ public class APIManager : MonoBehaviour
 
 
     //HTTP client 
-    private string ApiAdress = "http://127.0.0.1:8000/gen-convo";
+    private string ApiAdress = "http://127.0.0.1:8000";
 
     public class GenConvoReq{
         public string agentRole;
@@ -31,6 +31,8 @@ public class APIManager : MonoBehaviour
     }
 
     [SerializeField] private Player player;
+
+
     [SerializeField] private AudioSource audioSource;
 
     public int sampleRate = 44100;  // Common sample rate
@@ -85,7 +87,28 @@ public class APIManager : MonoBehaviour
 
     private IEnumerator postGenQuestionReq(byte[] audioData) {
 
-        /* Step 1: Send a post request to the server to generate conversation based on posted parameters */
+        /*STEP 1: Send user data to server for transcription*/
+
+        // Debug.Log(audioData);
+        WWWForm form = new WWWForm();
+        form.AddBinaryData("file", audioData, "userResponse.wav", "audio/wav");
+
+        using (UnityWebRequest request = UnityWebRequest.Post(ApiAdress + "/transcribe-user-speech", form))
+        {
+            // request.SetRequestHeader("Content-Type", "multipart/form-data");
+
+            yield return request.SendWebRequest();
+
+            if (request.result != UnityWebRequest.Result.Success){
+                Debug.LogError("Upload Failed: " + request.error);
+            }
+            else{
+                Debug.Log("Upload Successful: " + request.downloadHandler.text);
+            }
+        }
+
+
+        /* Step 2: Send a post request to the server to generate conversation based on posted parameters */
         GenConvoReq convoReq = new GenConvoReq{
                 agentRole = "interviewer",
                 agentTone = "neutral",
@@ -97,7 +120,9 @@ public class APIManager : MonoBehaviour
         string json = JsonUtility.ToJson(convoReq); 
         byte[] jsonToSend = new System.Text.UTF8Encoding().GetBytes(json); 
 
-        var req = new UnityWebRequest(ApiAdress, "POST");
+
+        var req = new UnityWebRequest(ApiAdress +"/gen-convo", "POST");
+
         req.uploadHandler = (UploadHandler)new UploadHandlerRaw(jsonToSend);
         req.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
         req.SetRequestHeader("Content-Type", "application/json");
@@ -148,10 +173,5 @@ public class APIManager : MonoBehaviour
     }
     
 
-
-    // Uncomment if using other method for converting audio to byte data method 
-    // private void OnApplicationQuit() {
-    //     if (File.Exists(speechFilePath)) File.Delete(speechFilePath);
-    // }
 }
 
