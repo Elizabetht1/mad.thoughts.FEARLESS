@@ -32,7 +32,10 @@ public class APIManager : MonoBehaviour
            byte[] audioData = File.ReadAllBytes(speechFilePath); */
 
         // Better method that converts straight to byte array
-        byte[] audioData = WavUtility.ConvertAudioClipDataToInt16ByteArray(e.audioClip.GetData());
+        int sampleCount = e.audioClip.samples * e.audioClip.channels;
+        float[] tmp = new float[sampleCount];
+        e.audioClip.GetData(tmp, 0);
+        byte[] audioData = WavUtility.ConvertAudioClipDataToInt16ByteArray(tmp);
         // make a post request, sending byte data
     }
 
