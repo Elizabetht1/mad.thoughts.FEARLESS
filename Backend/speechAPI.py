@@ -54,8 +54,9 @@ async def transcribe_user_speech(file: UploadFile):
     returns: transcription status update
     '''
     os.makedirs("./user_audio_files",exist_ok = True)
-    with open("./user_audio_files/test.wav","wb") as buffer:
+    with open(f"./user_audio_files/{file.filename}","wb") as buffer:
         shutil.copyfileobj(file.file, buffer)
 
-    transcription = audioStore.transcribeAudio()
-    pass
+    transcription = audioStore.transcribeAudio(f"./user_audio_files/{file.filename}")
+    print(transcription)
+    return transcription

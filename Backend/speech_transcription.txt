@@ -1,0 +1,6 @@
+audio transcription: 
+gpt response: response
+
+audio transcription:  what's going on,
+gpt response: response
+
