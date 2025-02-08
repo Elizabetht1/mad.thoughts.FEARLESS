@@ -3129,3 +3129,93 @@ INFO:utils.textGen:potential choice from perplexity
 
 INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about your job aspirations. Could you tell me a bit about yourself and what kind of job you're looking for? What are your interests, skills, or any relevant experiences you have? This will help me understand how I can assist you in finding the right opportunity.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 162 
+prompt_tokens_used: 24 
+total_tokens_used: 186 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Of course I'd be happy to engage in a conversation with you. Let's start by getting to know a bit more about you and what you're looking for in a job.\n\n**Can you tell me a little about your background and what kind of role you're interested in?** This will help me better understand how I can assist you in finding a suitable position. \n\nAlso, are there any specific industries or sectors that appeal to you? This could range from retail, tech, healthcare, or anything else that aligns with your interests and skills. \n\nLastly, do you have any specific requirements for the job, such as remote work options, flexible hours, or a particular location? \n\nLet's chat about these details and see how we can tailor our conversation to best support your job search", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 91 
+prompt_tokens_used: 24 
+total_tokens_used: 115 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly, let's have a friendly conversation about your job aspirations. I'm here to help you explore opportunities that might fit your skills and interests.\n\nCould you start by telling me a bit about yourself? What kind of job are you looking for, and what skills or experiences do you think would make you a strong candidate? \n\nAlso, are there any specific industries or roles that interest you? This will help us narrow down some potential options for you.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 145 
+prompt_tokens_used: 24 
+total_tokens_used: 169 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about your job search. I'm here to help and support you in any way I can.\n\n**Interviewer:** Hi there It's great to meet you. Could you tell me a bit about yourself and what kind of job you're looking for? What are your interests and skills?\n\n**Follow-up Questions:**\n1. What specific industry or role are you interested in?\n2. Do you have any relevant experience or education that could be beneficial for the job you're seeking?\n3. Are you open to different types of work environments, such as remote or in-office positions?\n\nLet's chat about these aspects and see how we can assist you in finding the right opportunity", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 111 
+prompt_tokens_used: 24 
+total_tokens_used: 135 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Of course Let's have a friendly conversation about potential job opportunities. I'd love to learn more about your interests and skills to see if there's a good fit for you.\n\nCan you tell me a bit about yourself? What kind of job are you looking for, and what skills or experiences do you think would make you a strong candidate? \n\nAlso, are there any specific industries or roles that interest you? For example, are you more inclined towards creative fields, customer service, or perhaps something in technology? \n\nLet's chat about it", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 127 
+prompt_tokens_used: 24 
+total_tokens_used: 151 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about job opportunities. I'm here to help you explore potential roles that might suit your skills and interests.\n\nTo start, could you tell me a bit about yourself? What kind of job are you looking for? Are you interested in any specific industry or field? \n\nAlso, are you open to different types of positions, such as part-time or full-time, or do you have a preference? \n\nLastly, what skills or experiences do you think would make you a strong candidate for a job? \n\nLet's chat about these details and see how we can help you find a great fit", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 86 
+prompt_tokens_used: 24 
+total_tokens_used: 110 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about your job aspirations. I'm here to help and support you in your job search.\n\nTo start, could you tell me a bit about yourself? What kind of job are you looking for, and what skills or experiences do you think would make you a strong candidate? \n\nAlso, are there any specific industries or roles that interest you? This will help us explore potential opportunities together.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 296 
+prompt_tokens_used: 24 
+total_tokens_used: 320 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='Certainly Let\'s have a friendly conversation about your job aspirations. \n\n**Interviewer:** Hi there Thank you for coming in today. I understand you\'re looking for a job, and you\'ve expressed that with a bit of humor by saying "give me a job pretty please." Can you tell me a little bit about yourself and what kind of job you\'re interested in?\n\n**Interviewee:** (Your response here)\n\n**Interviewer:** That\'s great It sounds like you have some interesting skills and experiences. What do you think are your strengths that would make you a strong candidate for a position?\n\n**Interviewee:** (Your response here)\n\n**Interviewer:** Excellent We\'re always looking for people with a positive attitude and a willingness to learn. Are there any specific industries or roles that you\'re particularly interested in or have experience with?\n\n**Interviewee:** (Your response here)\n\n**Interviewer:** That\'s really helpful to know. We\'ll definitely consider your preferences as we discuss potential opportunities. Do you have any questions about the types of jobs we typically offer or the company culture?\n\n**Interviewee:** (Your response here)\n\n**Interviewer:** Great questions I\'m happy to answer those for you. We offer a variety of roles across different departments, and our company culture is very supportive and collaborative. We encourage creativity and growth within the team.\n\nLet\'s continue this conversation and see how we can match your skills and interests with our available positions', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 102 
+prompt_tokens_used: 24 
+total_tokens_used: 126 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Let's have a friendly conversation about your job search. I'm here to help you explore opportunities that might be a good fit for you.\n\n**Can you tell me a bit about yourself?** What kind of job are you looking for? Are there any specific industries or roles that interest you?\n\nAlso, do you have any relevant experience or skills that you think would be valuable in your next position? \n\nLastly, are you open to different types of work environments, such as remote or in-office positions?", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 296 
+prompt_tokens_used: 24 
+total_tokens_used: 320 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Certainly Let's have a friendly conversation about your job aspirations. I'm here to help you explore potential opportunities.\n\n**Interviewer:** Hi there Thanks for coming in today. Can you tell me a bit about yourself and what kind of job you're looking for? What are your interests and skills?\n\n**Interviewee Response:** (Please respond with your background, interests, and the type of job you're interested in.)\n\n**Interviewer Follow-Up:** Great, thank you for sharing that Based on what you've told me, here are a few job types that might suit you:\n\n1. **Retail Sales Associate:** If you enjoy interacting with people and have a flair for sales, this could be a good fit. Many boutiques and stores are hiring sales associates.\n\n2. **Creative Roles:** If you have a creative side, roles like makeup artist, floral designer, or even a stylist might be up your alley.\n\n3. **Customer Service:** If you're good with people and enjoy helping others, customer service roles could be a great option.\n\nLet me know if any of these resonate with you, or if you have something else in mind.\n\n**Interviewee Response:** (Please respond with your thoughts on these options or if you have another direction in mind.)\n\n**Interviewer Follow-Up:** Excellent Let's explore those options further. I can provide more details about each role and see if we can find a good match for you. How does that sound?", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
