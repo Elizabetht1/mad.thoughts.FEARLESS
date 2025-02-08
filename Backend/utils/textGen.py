@@ -22,6 +22,8 @@ def constructMsg(
         "content": (
             f"You are a {agentRole} and you need to "
             f"engage in a {agentTone} conversation with a {userRole}."
+            f"Respond to the query the user says and summarize what they said."
+
         ),
     }
     userMsg = {   

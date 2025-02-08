@@ -3592,3 +3592,51 @@ INFO:uvicorn.error:Shutting down
 INFO:uvicorn.error:Waiting for application shutdown.
 INFO:uvicorn.error:Application shutdown complete.
 INFO:uvicorn.error:Finished server process [52520]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 39 
+prompt_tokens_used: 1216 
+total_tokens_used: 1255 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like your sentence is incomplete or unclear. Could you please provide more context or clarify what you are trying to express? I'm here to help with any information or assistance you need.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 36 
+prompt_tokens_used: 1207 
+total_tokens_used: 1243 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like your query is incomplete. Could you please provide more details or clarify what you are asking for? I'm here to help with any information or assistance you need.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 31 
+prompt_tokens_used: 1207 
+total_tokens_used: 1238 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like your query is incomplete. Could you please provide more details or clarify what you are asking? I'll do my best to assist you.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [52737]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 114 
+prompt_tokens_used: 82 
+total_tokens_used: 196 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Hello It's great to meet you. You're a computer science major looking for employment opportunities, and you're here today to explore potential job openings with our company. You seem eager to find a position that aligns with your skills and interests.\n\nTo summarize, you've expressed your enthusiasm for being employed and are hoping to find a suitable role within our organization. Let's take a moment to discuss your background and how your skills might fit into our current projects. Can you tell me a bit more about your experiences and what you're most interested in working on?", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [52839]

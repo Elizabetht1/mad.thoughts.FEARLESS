@@ -4,3 +4,15 @@ gpt response: response
 audio transcription:  what's going on,
 gpt response: response
 
+audio transcription:  I'm, be a point, other,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  hello how's it going I'm just a job candidate who wants to be employed, and that's why I'm interviewing, I'm a computer science major with, so you should really, please tell me that you have a job that you're,
+gpt response: response
+
