@@ -32,7 +32,6 @@ public class APIManager : MonoBehaviour
 
 
     [SerializeField] private Player player;
-<<<<<<< HEAD
     
     /* AUDIO CLIPS */
 
@@ -41,12 +40,6 @@ public class APIManager : MonoBehaviour
     public int channels = 1;
 
     public string audioUrl;
-=======
-    [SerializeField] private AudioSource audioSource;
-
-    private string speechFileName = "player-speech";
-    private string speechFilePath;
->>>>>>> 9a8f43d5447c11bcb7ff0b4ade4c9dfb1c0fc172
 
     private void Start() {
         Debug.Log("I am alive!");
@@ -78,11 +71,7 @@ public class APIManager : MonoBehaviour
         OnNPCResponse?.Invoke(this, new NPCResponseArgs { audioClip = clip });
     }
 
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 9a8f43d5447c11bcb7ff0b4ade4c9dfb1c0fc172
     /**
     Make a request to generate a question to the backend
     */
@@ -163,77 +152,7 @@ public class APIManager : MonoBehaviour
                 audioSource.Play();
             }
         }
-         //     GenConvoReq convoReq = new GenConvoReq{
-    //             agentRole = "interviewer",
-    //             agentTone = "neutral",
-    //             userRole = "interviewee",
-    //             userQuery = "give me a job pretty please",
-    //     };
-    //     string json = JsonUtility.ToJson(convoReq);
-    //     var req = new UnityWebRequest(ApiAdress, "POST");
-
-
-    //     byte[] jsonToSend = new System.Text.UTF8Encoding().GetBytes(json);
-        
-        
-    //     req.uploadHandler = (UploadHandler)new UploadHandlerRaw(jsonToSend);
-    //     req.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
-    //     req.SetRequestHeader("Content-Type", "application/json");
-
-    //     //Send the request then wait here until it returns
-    //     var asyncOperation = req.SendWebRequest();
-
-    //     while (!asyncOperation.isDone)
-    //     {
-    //     // wherever you want to show the progress:
-
-    //         float progress = req.downloadProgress;
-    //         Debug.Log("Loading " + progress);
-    //         yield return null;
-    //     }
-
-    //     while (!req.isDone){
-    //         yield return null; // this worked for me
-    //     }
-        
-
-
-    //     if (req.isNetworkError)
-    //     {
-    //         Debug.Log("Error While Sending: " + req.error);
-    //     } else{
-    //         Debug.Log("Received data!");
-    //         byte[] data = req.downloadHandler.data;
-    //         float[] floatData = ConvertByteToFloat(data);
-    //         AudioClip clip = AudioClip.Create("testClip", floatData.Length, channels, sampleRate, false);
-    //         clip.SetData(floatData, 0);
-    //         audioSource.clip = clip;
-    //         audioSource.Play();
-
-    //         // AudioClip clip = DownloadHandlerAudioClip.GetContent(req);
-    //         // Debug.Log( clip + " length: " + clip.length );
-    //         // if (clip)
-    //         // {
-    //         //     GetComponent<AudioSource>().clip = clip;
-    //         //     GetComponent<AudioSource>().Play();
-    //         // }
-
-    //     }
-
-    // }
-
-    /*
-    use get requests with this: UnityWebRequestMultimedia
-    */
     }
-
-
-
-
-    // Uncomment if using other method for converting audio to byte data method 
-    // private void OnApplicationQuit() {
-    //     if (File.Exists(speechFilePath)) File.Delete(speechFilePath);
-    // }
 
 }
 
