@@ -27,18 +27,25 @@ public class APIManager : MonoBehaviour
     }
 
     private void OnPlayerSpoke(object sender, Player.PlayerSpokeArgs e) {
-        SavWav.Save(speechFileName, e.audioClip);
-        // make a post request, sending wav file
+        /* // Other method that converts audio to wav then wav to byte[]
+           SavWav.Save(speechFileName, e.audioClip);
+           byte[] audioData = File.ReadAllBytes(speechFilePath); */
+
+        // Better method that converts straight to byte array
+        byte[] audioData = WavUtility.ConvertAudioClipDataToInt16ByteArray(e.audioClip.GetData());
+        // make a post request, sending byte data
     }
 
-    private void getRequest() {
-        AudioClip clip = null;
-        // make a get request and set clip to response
+    private void GetResponse() {
+        byte[] audioData = null; // update with response
+        AudioClip clip = WavUtility.ToAudioClip(audioData);
+
         // fire event to make NPC respond
         OnNPCResponse?.Invoke(this, new NPCResponseArgs { audioClip = clip });
     }
 
-    private void OnApplicationQuit() {
-        if (File.Exists(speechFilePath)) File.Delete(speechFilePath);
-    }
+    // Uncomment if using other method for converting audio to byte data method 
+    // private void OnApplicationQuit() {
+    //     if (File.Exists(speechFilePath)) File.Delete(speechFilePath);
+    // }
 }

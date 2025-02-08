@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     private float[] clipSampleData = new float[1024];
     private float speakThreshold = 0.05f;
     private float silenceThreshold = 0.03f;
+    
     private int secsListen = 1;
     private int secsRecord = 60;
     private int freq = 44100;
@@ -92,9 +93,11 @@ public class Player : MonoBehaviour
     private void TrimAudioClip() {
         int endSample = (int)(timeSpeaking * audioClip.frequency);
         AudioClip trimmedClip = AudioClip.Create("TrimmedClip", endSample, audioClip.channels, audioClip.frequency, false);
+        // get data from audio clip and store first parts into trimmedClip
         float[] tmp = new float[endSample];
         audioClip.GetData(tmp, 0);
         trimmedClip.SetData(tmp, 0);
+        // update audioClip
         audioClip = trimmedClip;
     }
 }
