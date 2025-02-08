@@ -55,7 +55,7 @@ public class APIManager : MonoBehaviour
     Make a request to generate a question to the backend
     */
     private IEnumerator postGenQuestionReq() {
-        
+
         GenConvoReq convoReq = new GenConvoReq{
                 agentRole = "interviewer",
                 agentTone = "neutral",
@@ -74,13 +74,30 @@ public class APIManager : MonoBehaviour
         req.SetRequestHeader("Content-Type", "application/json");
 
         //Send the request then wait here until it returns
-        yield return req.SendWebRequest();
+        var asyncOperation = req.SendWebRequest();
+
+        while (!asyncOperation.isDone)
+        {
+        // wherever you want to show the progress:
+
+            float progress = req.downloadProgress;
+            Debug.Log("Loading " + progress);
+            yield return null;
+        }
+
+        while (!req.isDone){
+            yield return null; // this worked for me
+        }
+        
+
 
         if (req.isNetworkError)
         {
-                Debug.Log("Error While Sending: " + req.error);
-        }else{
-            Debug.Log("Received: " + req.downloadHandler.text);
+            Debug.Log("Error While Sending: " + req.error);
+        } else{
+            Debug.Log("Received: " + string.Join(", ", req.downloadHandler.data));
+            yield return req.downloadHandler.data;
+
         }
 
         // // Create a Web Form
