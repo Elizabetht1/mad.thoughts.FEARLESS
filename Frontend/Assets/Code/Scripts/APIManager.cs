@@ -143,7 +143,11 @@ public class APIManager : MonoBehaviour
                 // audioSource.Play();
             }
         }
+        string audioData_str = System.Text.Encoding.UTF8.GetString(audioData);
+        UnityWebRequest.Post(ApiAdress, audioData_str, "audio/x-wav");
     }
+    
+
 
     // Uncomment if using other method for converting audio to byte data method 
     // private void OnApplicationQuit() {
