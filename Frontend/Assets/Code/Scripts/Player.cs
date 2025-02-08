@@ -27,6 +27,8 @@ public class Player : MonoBehaviour
     private float timeSinceLowVolume = 0f;
     private float delay = 2f;
 
+    private float timeSpeaking = 0;
+
     private bool isSpeaking = false;
 
     private void Start() {
@@ -39,8 +41,10 @@ public class Player : MonoBehaviour
     private void Update() {
         float volume = GetMicVolume();
         if (!isSpeaking) {
+            timeSpeaking = 0;
             HandleListening(volume);
         } else {
+            timeSpeaking += Time.deltaTime;
             HandleRecording(volume);
         }
     }
@@ -76,11 +80,21 @@ public class Player : MonoBehaviour
             if (timeSinceLowVolume > delay) { // check if user is no longer speaking
                 Debug.Log("User stopped speaking");
                 Microphone.End(devices[0]); // stop recording
+                TrimAudioClip();
                 timeSinceLowVolume = 0;
                 isSpeaking = false;
                 OnPlayerSpoke?.Invoke(this, new PlayerSpokeArgs {audioClip = audioClip});
                 audioClip = Microphone.Start(devices[0], true, secsListen, freq); // start listening
             }
         } else timeSinceLowVolume = 0;
+    }
+
+    private void TrimAudioClip() {
+        int endSample = (int)(timeSpeaking * audioClip.frequency);
+        AudioClip trimmedClip = AudioClip.Create("TrimmedClip", endSample, audioClip.channels, audioClip.frequency, false);
+        float[] tmp = new float[endSample];
+        audioClip.GetData(tmp, 0);
+        trimmedClip.SetData(tmp, 0);
+        audioClip = trimmedClip;
     }
 }
