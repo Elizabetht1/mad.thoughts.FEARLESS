@@ -99,7 +99,6 @@ public class APIManager : MonoBehaviour
         string json = JsonUtility.ToJson(convoReq); 
         byte[] jsonToSend = new System.Text.UTF8Encoding().GetBytes(json); 
 
-
         var req = new UnityWebRequest(ApiAdress, "POST");
         req.uploadHandler = (UploadHandler)new UploadHandlerRaw(jsonToSend);
         req.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
