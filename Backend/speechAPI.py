@@ -25,7 +25,7 @@ async def generate_conversation(config: ConvoConfig)->str:
     input: enviornment configuration
     returns: AudioFile (.wav type)
     '''
-    questionText = textGen.generateText(
+    questionText = textGen.generateRequestText(
         config.agentRole,
         config.agentTone,
         config.userRole,

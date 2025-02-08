@@ -16,7 +16,7 @@ def constructMsg(
     userQuery = None
 ):
     if not userQuery:
-        return {"ok":False,"error":"no user string provided","messages":[]}
+        return {"ok":False, "error":"no user string provided", "messages":[]}
     systemMsg = {
         "role": "system",
         "content": (
@@ -30,21 +30,23 @@ def constructMsg(
            userQuery
         ),
     } 
-    return {"ok":True,"error":"","messages":[systemMsg,userMsg]}
+    return {"ok":True, "error":"", "messages":[systemMsg,userMsg]}
 
-def generateText(
-    agentRole,
-    agentTone,
-    userRole,
-    userQuery
+def generateRequestText(
+    agentRole = "interviewer",
+    agentTone = "confused",
+    userRole = "interviewee",
+    userQuery = None
 ):
+    if not userQuery:
+        return {"ok":False, "error":"no user string provided", "text":""}
     logging.basicConfig(filename='./logging/textGen.log', level=logging.INFO)
 
     ok,error,messages = constructMsg(agentRole,agentTone,userRole, userQuery).values()
    
     if not ok:
         logger.info(f"error with message generation: \n {error} \n")
-        return {"ok": False, "error": f"error with message generation: \n {error}","text":""}
+        return {"ok": False, "error": f"error with message generation: \n {error}", "text":""}
     
 
     response = client.chat.completions.create(
@@ -64,5 +66,5 @@ def generateText(
             logger.info(choice)
 
     res = response.choices[0].message.content
-    return {"ok": True, "error": "","text":res}
+    return {"ok": True, "error": "", "text":res}
     
