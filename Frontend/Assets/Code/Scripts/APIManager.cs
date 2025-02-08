@@ -31,23 +31,15 @@ public class APIManager : MonoBehaviour
     }
 
 
-    [SerializeField] private Player player;
-<<<<<<< HEAD
-    
-    /* AUDIO CLIPS */
-=======
+    [SerializeField] private Player player;=======
     [SerializeField] private AudioSource audioSource;
->>>>>>> 44ac663ac5b51e2f30c0621577137bc4584a2486
 
     public int sampleRate = 44100;  // Common sample rate
     public int channels = 1;
 
     public string audioUrl;
-<<<<<<< HEAD
-=======
     private string speechFileName = "player-speech";
     private string speechFilePath;
->>>>>>> 44ac663ac5b51e2f30c0621577137bc4584a2486
 
     private void Start() {
         Debug.Log("I am alive!");
@@ -74,11 +66,6 @@ public class APIManager : MonoBehaviour
     private void GetResponse(AudioClip clip) {
         OnNPCResponse?.Invoke(this, new NPCResponseArgs { audioClip = clip });
     }
-
-<<<<<<< HEAD
-    
-=======
->>>>>>> 44ac663ac5b51e2f30c0621577137bc4584a2486
     /**
     Make a request to generate a question to the backend
     */
@@ -159,13 +146,9 @@ public class APIManager : MonoBehaviour
         }
     }
 
-<<<<<<< HEAD
-=======
     // Uncomment if using other method for converting audio to byte data method 
     // private void OnApplicationQuit() {
     //     if (File.Exists(speechFilePath)) File.Delete(speechFilePath);
     // }
-
->>>>>>> 44ac663ac5b51e2f30c0621577137bc4584a2486
 }
 
