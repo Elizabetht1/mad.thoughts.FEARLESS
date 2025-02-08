@@ -3,7 +3,7 @@ import os
 import logging
 
 
-api_key = os.environ["OPENAI_API_KEY"]
+api_key = "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"
 
 client = openai.OpenAI(api_key=api_key, base_url="https://api.perplexity.ai")
 

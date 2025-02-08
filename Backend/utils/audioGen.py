@@ -22,14 +22,16 @@ def generateAudio(text,fp = "./generated_audio_transcripts"):
     input=text,
     )
 
-
-    os.makedirs(fp,exist_ok=True)
-    response.stream_to_file(fp+"/test.mp3")
+    FNAME = "/test.mp3"
+    ASSETS_URL = "http://127.0.0.1:8000/assets"
     
-    audioZip = zipfile.ZipFile(fp+"/test.zip", "w", zipfile.ZIP_DEFLATED)
-    audioZip.write(fp+"/test.mp3")
+    os.makedirs(fp,exist_ok=True)
+    response.stream_to_file(fp + FNAME)
+    
+    audioZip = zipfile.ZipFile(fp + FNAME, "w", zipfile.ZIP_DEFLATED)
+    audioZip.write(fp + FNAME)
     audioZip.close()
 
 
     # print(response.content)
-    return response.content
+    return ASSETS_URL + FNAME
