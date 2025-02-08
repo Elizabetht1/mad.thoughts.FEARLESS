@@ -3640,3 +3640,73 @@ INFO:uvicorn.error:Shutting down
 INFO:uvicorn.error:Waiting for application shutdown.
 INFO:uvicorn.error:Application shutdown complete.
 INFO:uvicorn.error:Finished server process [52839]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 153 
+prompt_tokens_used: 72 
+total_tokens_used: 225 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It sounds like you're preparing for a speaking engagement and are concerned about enunciating well as you're also in the process of job hunting. You're asking if I can transcribe your audio, possibly to help you review your speech or improve your delivery.\n\nTo address your request, there are several options available for transcribing audio. You could consider using services like TranscribeMe, Scribie, or Otter.ai, which offer high-quality transcription services. Alternatively, if you prefer to do it yourself, there are free tools like OTranscribe or Express Scribe that you can use.\n\nLet's focus on how you're feeling about your speaking engagement and job search. How do you think transcribing your audio might help you prepare or improve your performance?", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [52974]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 105 
+prompt_tokens_used: 57 
+total_tokens_used: 162 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like you're interested in discussing debugging queries, possibly in the context of database management or other systems. Could you please elaborate on what specific aspect of debugging queries you'd like to explore? Are you looking at SQL queries, debugging tools like Chalk, or perhaps issues with chatbot responses in platforms like Yext? This will help me better understand your query and provide a more tailored response. \n\nTo summarize, you seem to be asking about debugging queries, but I'd like more details to assist you effectively.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [53040]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 100 
+prompt_tokens_used: 54 
+total_tokens_used: 154 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It sounds like you're concerned about an issue related to audio files. You mentioned that you think there might be a problem with how audio files are handled, and you're worried that things are moving quickly. Could you elaborate a bit more on what specifically is causing your concern? What kind of issues are you experiencing with audio files? \n\nTo summarize, you believe there's an issue with audio files, possibly related to their handling or playback, and you're feeling a sense of urgency about it.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [53094]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 181 
+prompt_tokens_used: 55 
+total_tokens_used: 236 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='It sounds like you\'re expressing a bit of self-deprecation, which is a common way people use humor or humility to connect with others. You mentioned hoping your contribution helps, but then you jokingly attributed any potential shortcomings to your own incompetence. This kind of self-deprecation can be a way to appear more relatable or likable by acknowledging potential flaws in a lighthearted manner.\n\nTo continue the conversation, I might say something like: "Thank you for sharing that. It\'s great that you\'re willing to be open and honest. Can you tell me more about what you\'re hoping to achieve or discuss today?" This approach acknowledges their sentiment while gently steering the conversation forward. \n\n**Summary of what you said:**\n- You\'re hoping your contribution will be helpful.\n- You jokingly referred to yourself as incompetent, using self-deprecation as a form of humor or humility.', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [53184]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 94 
+prompt_tokens_used: 57 
+total_tokens_used: 151 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='It seems like you\'re emphasizing that this is a final test. Could you elaborate on what you mean by "this is one final test"? Are you referring to a specific examination or assessment, or is there another context you\'d like to discuss?\n\nTo summarize, you\'ve stated that there is a final test, but you haven\'t specified the nature or context of this test. If you could provide more details, I\'d be happy to engage further in the conversation.', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [53255]

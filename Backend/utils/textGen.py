@@ -15,6 +15,7 @@ def constructMsg(
     userRole = "interviewee",
     userQuery = None
 ):
+   
     if not userQuery:
         return {"ok":False,"error":"no user string provided","messages":[]}
     systemMsg = {
@@ -23,7 +24,6 @@ def constructMsg(
             f"You are a {agentRole} and you need to "
             f"engage in a {agentTone} conversation with a {userRole}."
             f"Respond to the query the user says and summarize what they said."
-
         ),
     }
     userMsg = {   
@@ -42,13 +42,14 @@ def generateText(
 ):
     logging.basicConfig(filename='./logging/textGen.log', level=logging.INFO)
 
+    userQuery = " ".join(userQuery)
     ok,error,messages = constructMsg(agentRole,agentTone,userRole, userQuery).values()
    
     if not ok:
         logger.info(f"error with message generation: \n {error} \n")
         return {"ok": False, "error": f"error with message generation: \n {error}","text":""}
     
-
+    print(messages)
     response = client.chat.completions.create(
         model="sonar",
         messages=messages,
