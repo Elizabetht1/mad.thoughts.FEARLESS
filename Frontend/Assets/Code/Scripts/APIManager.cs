@@ -7,6 +7,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 /* NETOWRKING PACKAGES */
 using UnityEngine.Networking;
@@ -30,26 +31,39 @@ public class APIManager : MonoBehaviour
     }
 
     [SerializeField] private Player player;
+    [SerializeField] private AudioSource audioSource;
+
+    private string speechFileName = "player-speech";
+    private string speechFilePath;
 
     private void Start() {
         Debug.Log("I am alive!");
         StartCoroutine(postGenQuestionReq());
         player.OnPlayerSpoke += OnPlayerSpoke;
+        speechFilePath = Application.dataPath + "/" + speechFileName + ".wav";
     }
 
     private void OnPlayerSpoke(object sender, Player.PlayerSpokeArgs e) {
-        Debug.Log("player said something");
-        
-        // convert audio clip to wav file
-        // make a post request, sending wav file
+        /* // Other method that converts audio to wav then wav to byte[]
+           SavWav.Save(speechFileName, e.audioClip);
+           byte[] audioData = File.ReadAllBytes(speechFilePath); */
+
+        // Better method that converts straight to byte array
+        int sampleCount = e.audioClip.samples * e.audioClip.channels;
+        float[] tmp = new float[sampleCount];
+        e.audioClip.GetData(tmp, 0);
+        byte[] audioData = WavUtility.ConvertAudioClipDataToInt16ByteArray(tmp);
+        // make a post request, sending byte data
     }
 
-    private void getRequest() {
-        AudioClip clip = null;
-        // make a get request and set clip to response
+    private void GetResponse() {
+        byte[] audioData = null; // update with response
+        AudioClip clip = WavUtility.ToAudioClip(audioData);
+
         // fire event to make NPC respond
         OnNPCResponse?.Invoke(this, new NPCResponseArgs { audioClip = clip });
     }
+
 
     /**
     Make a request to generate a question to the backend
@@ -128,6 +142,12 @@ public class APIManager : MonoBehaviour
     }
 
 
+
+
+    // Uncomment if using other method for converting audio to byte data method 
+    // private void OnApplicationQuit() {
+    //     if (File.Exists(speechFilePath)) File.Delete(speechFilePath);
+    // }
 
 }
 
