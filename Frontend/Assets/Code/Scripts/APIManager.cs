@@ -32,20 +32,27 @@ public class APIManager : MonoBehaviour
 
 
     [SerializeField] private Player player;
+<<<<<<< HEAD
     
     /* AUDIO CLIPS */
+=======
+    [SerializeField] private AudioSource audioSource;
+>>>>>>> 44ac663ac5b51e2f30c0621577137bc4584a2486
 
-    public AudioSource audioSource; // Assign in the Inspector
     public int sampleRate = 44100;  // Common sample rate
     public int channels = 1;
 
     public string audioUrl;
+<<<<<<< HEAD
+=======
+    private string speechFileName = "player-speech";
+    private string speechFilePath;
+>>>>>>> 44ac663ac5b51e2f30c0621577137bc4584a2486
 
     private void Start() {
         Debug.Log("I am alive!");
     
         audioSource = gameObject.AddComponent<AudioSource>();
-        StartCoroutine(postGenQuestionReq());
         player.OnPlayerSpoke += OnPlayerSpoke;
         speechFilePath = Application.dataPath + "/" + speechFileName + ".wav";
     }
@@ -61,17 +68,17 @@ public class APIManager : MonoBehaviour
         e.audioClip.GetData(tmp, 0);
         byte[] audioData = WavUtility.ConvertAudioClipDataToInt16ByteArray(tmp);
         // make a post request, sending byte data
+        StartCoroutine(postGenQuestionReq(audioData));
     }
 
-    private void GetResponse() {
-        byte[] audioData = null; // update with response
-        AudioClip clip = WavUtility.ToAudioClip(audioData);
-
-        // fire event to make NPC respond
+    private void GetResponse(AudioClip clip) {
         OnNPCResponse?.Invoke(this, new NPCResponseArgs { audioClip = clip });
     }
 
+<<<<<<< HEAD
     
+=======
+>>>>>>> 44ac663ac5b51e2f30c0621577137bc4584a2486
     /**
     Make a request to generate a question to the backend
     */
@@ -90,7 +97,7 @@ public class APIManager : MonoBehaviour
     }
     
 
-    private IEnumerator postGenQuestionReq() {
+    private IEnumerator postGenQuestionReq(byte[] audioData) {
 
         /* Step 1: Send a post request to the server to generate conversation based on posted parameters */
         GenConvoReq convoReq = new GenConvoReq{
@@ -126,8 +133,6 @@ public class APIManager : MonoBehaviour
         }
         
         /* Step 2: Receive generate text resource url from the server */
-        
-
         if (req.isNetworkError)
         {
             Debug.Log("Error While Sending: " + req.error);
@@ -148,11 +153,20 @@ public class APIManager : MonoBehaviour
             else
             {
                 AudioClip clip = DownloadHandlerAudioClip.GetContent(request);
-                audioSource.clip = clip;
-                audioSource.Play();
+                GetResponse(clip);
+                // audioSource.clip = clip;
+                // audioSource.Play();
             }
         }
     }
 
+<<<<<<< HEAD
+=======
+    // Uncomment if using other method for converting audio to byte data method 
+    // private void OnApplicationQuit() {
+    //     if (File.Exists(speechFilePath)) File.Delete(speechFilePath);
+    // }
+
+>>>>>>> 44ac663ac5b51e2f30c0621577137bc4584a2486
 }
 
