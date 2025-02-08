@@ -993,6 +993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   api: {fileID: 1832959821}
+  player: {fileID: 1159663985}
   audioSource: {fileID: 1892602725}
 --- !u!82 &1892602725
 AudioSource:

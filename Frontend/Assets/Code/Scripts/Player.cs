@@ -13,6 +13,9 @@ public class Player : MonoBehaviour
     public class PlayerSpokeArgs { public AudioClip audioClip; }
     public event EventHandler<PlayerSpokeArgs> OnPlayerSpoke;
 
+    public class IsSpeakingArgs { public bool isSpeaking; }
+    public event EventHandler<IsSpeakingArgs> OnIsSpeakingChange;
+
     private AudioClip audioClip;
 
     private string[] devices;
@@ -70,7 +73,10 @@ public class Player : MonoBehaviour
         if (volume > speakThreshold) { // check if user is speaking
             Debug.Log("User is speaking");
             Microphone.End(devices[0]); // stop listening
+
             isSpeaking = true;
+            OnIsSpeakingChange?.Invoke(this, new IsSpeakingArgs {isSpeaking = isSpeaking });
+
             audioClip = Microphone.Start(devices[0], false, secsRecord, freq); // start recording
         }
     }
@@ -80,10 +86,14 @@ public class Player : MonoBehaviour
             timeSinceLowVolume += Time.deltaTime;
             if (timeSinceLowVolume > delay) { // check if user is no longer speaking
                 Debug.Log("User stopped speaking");
-                Microphone.End(devices[0]); // stop recording
-                TrimAudioClip();
                 timeSinceLowVolume = 0;
+                Microphone.End(devices[0]); // stop recording
+
+                TrimAudioClip();
+                
                 isSpeaking = false;
+                OnIsSpeakingChange?.Invoke(this, new IsSpeakingArgs {isSpeaking = isSpeaking });
+
                 OnPlayerSpoke?.Invoke(this, new PlayerSpokeArgs {audioClip = audioClip});
                 audioClip = Microphone.Start(devices[0], true, secsListen, freq); // start listening
             }
