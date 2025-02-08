@@ -2,14 +2,14 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Uu]ser[Ss]ettings/
-/.vscode/
+/Frontend/[Ll]ibrary/
+/Frontend/[Tt]emp/
+/Frontend/[Oo]bj/
+/Frontend/[Bb]uild/
+/Frontend/[Bb]uilds/
+/Frontend/[Ll]ogs/
+/Frontend/[Uu]ser[Ss]ettings/
+/Frontend/.vscode/
 /.DS_Store
 /.zip
 
