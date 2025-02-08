@@ -35,8 +35,8 @@ async def generate_conversation(config: ConvoConfig):
         print("error loading question text.\n")
         print(questionText['error'])
         return {"ok": False, "error": questionText['error'],"data":""}
-    questionAudio = audioGen.generateAudio()
-    pass
+    questionAudio = audioGen.generateAudio(questionText['text'])
+    return {"ok":True,"error":"","data":""}
 
 
 @app.post("/store-user-resp")
