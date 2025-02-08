@@ -31,7 +31,11 @@ public class APIManager : MonoBehaviour
     }
 
 
+<<<<<<< HEAD
     [SerializeField] private Player player;
+=======
+    [SerializeField] private Player player;=======
+>>>>>>> d6a69c46d7c2aa7365c8d9488c888cfe1ab4f4b2
     [SerializeField] private AudioSource audioSource;
 
     public int sampleRate = 44100;  // Common sample rate
@@ -66,8 +70,11 @@ public class APIManager : MonoBehaviour
     private void GetResponse(AudioClip clip) {
         OnNPCResponse?.Invoke(this, new NPCResponseArgs { audioClip = clip });
     }
+<<<<<<< HEAD
 
     
+=======
+>>>>>>> d6a69c46d7c2aa7365c8d9488c888cfe1ab4f4b2
     /**
     Make a request to generate a question to the backend
     */
@@ -121,8 +128,12 @@ public class APIManager : MonoBehaviour
         string json = JsonUtility.ToJson(convoReq); 
         byte[] jsonToSend = new System.Text.UTF8Encoding().GetBytes(json); 
 
+<<<<<<< HEAD
 
         var req = new UnityWebRequest(ApiAdress +"/gen-convo", "POST");
+=======
+        var req = new UnityWebRequest(ApiAdress, "POST");
+>>>>>>> d6a69c46d7c2aa7365c8d9488c888cfe1ab4f4b2
         req.uploadHandler = (UploadHandler)new UploadHandlerRaw(jsonToSend);
         req.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
         req.SetRequestHeader("Content-Type", "application/json");
@@ -170,5 +181,12 @@ public class APIManager : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
+=======
+    // Uncomment if using other method for converting audio to byte data method 
+    // private void OnApplicationQuit() {
+    //     if (File.Exists(speechFilePath)) File.Delete(speechFilePath);
+    // }
+>>>>>>> d6a69c46d7c2aa7365c8d9488c888cfe1ab4f4b2
 }
 
