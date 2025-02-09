@@ -30,7 +30,6 @@ public class APIManager : MonoBehaviour
         public string userQuery;
     }
 
-
     [SerializeField] private Player player;
     [SerializeField] private AudioSource audioSource;
 
@@ -122,6 +121,7 @@ public class APIManager : MonoBehaviour
 
 
         var req = new UnityWebRequest(ApiAdress +"/gen-convo", "POST");
+
         req.uploadHandler = (UploadHandler)new UploadHandlerRaw(jsonToSend);
         req.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
         req.SetRequestHeader("Content-Type", "application/json");
@@ -167,7 +167,10 @@ public class APIManager : MonoBehaviour
                 // audioSource.Play();
             }
         }
+        string audioData_str = System.Text.Encoding.UTF8.GetString(audioData);
+        UnityWebRequest.Post(ApiAdress, audioData_str, "audio/x-wav");
     }
+    
 
 }
 
