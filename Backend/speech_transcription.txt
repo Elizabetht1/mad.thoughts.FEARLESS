@@ -31,3 +31,978 @@ gpt response: response
 audio transcription:  this is one final test,
 gpt response: response
 
+audio transcription:  updating Unity,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  how's it going,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  yeah,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  how's it going,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  volume 100%,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  close,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  hello,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  what's the temperature outside,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  hello hello,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  hello how's it going,
+gpt response: response
+
+audio transcription:  it's really loud in here,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  hello how's it going,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  set timer for 5,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  play Taylor Swift,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  level three,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  thank you,
+gpt response: response
+
+audio transcription:  set alarm for 9:30,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  Marion Illinois,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  hello,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  Julian,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  I'm crazy,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  play,
+gpt response: response
+
+audio transcription:  hello how's it going,
+gpt response: response
+
+audio transcription:  but I don't remember,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  broadcast the,
+gpt response: response
+
+audio transcription:  East Coast Eagles,
+gpt response: response
+
+audio transcription:  24 down,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  stop stream,
+gpt response: response
+
+audio transcription:  how do I see my,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  a,
+gpt response: response
+
+audio transcription:  does my level of artistic,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  play the map,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  timer on,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  okay okay,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  how many minutes,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  how much snow,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  play discover weekly,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  play What's the number of our,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  what time is it in Australia,
+gpt response: response
+
+audio transcription:  play,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  set timer for,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  the demos,
+gpt response: response
+
+audio transcription:  can you get sponsor prices,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  100 degrees,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  you're ready,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  play Lightning album because,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  OK Google,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  what is,
+gpt response: response
+
+audio transcription:  what time is it supposed to rain today,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  yeah,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  record but it's okay,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  it does the job,
+gpt response: response
+
+audio transcription:  one switch to the like video,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  I don't know how this happened,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  play Moana music,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  how much time is left,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  what's the temperature outside,
+gpt response: response
+
+audio transcription:  what time is it today,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  what's the temperature outside,
+gpt response: response
+
+audio transcription:  turn off Apple Insurance are,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  what's the high temperature today,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  play Brothers on Pandora,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  who are the organizers,
+gpt response: response
+
+audio transcription:  play Soho,
+gpt response: response
+
+audio transcription:  the design team actually Christmas,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  really yeah,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  set an alarm for 3:30 a.m.,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  I wonder what's currently,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  turn the lights off,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  set an alarm for,
+gpt response: response
+
+audio transcription:  set alarm 6:45,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  turn up volume,
+gpt response: response
+
+audio transcription:  turn off the Twinkle Twinkle,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  hello,
+gpt response: response
+
+audio transcription:  what's the weather today,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  hello how's it going,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  hello,
+gpt response: response
+
+audio transcription:  hello,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  okay hello hey,
+gpt response: response
+
+audio transcription:  hello how's it going,
+gpt response: response
+
+audio transcription:  did someone want,
+gpt response: response
+
+audio transcription:  hello how's it going,
+gpt response: response
+

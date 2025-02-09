@@ -31,8 +31,6 @@ public class APIManager : MonoBehaviour
     }
 
     [SerializeField] private Player player;
-
-
     [SerializeField] private AudioSource audioSource;
 
     public int sampleRate = 44100;  // Common sample rate
@@ -58,10 +56,11 @@ public class APIManager : MonoBehaviour
         // Better method that converts straight to byte array
         int sampleCount = e.audioClip.samples * e.audioClip.channels;
         float[] tmp = new float[sampleCount];
+        byte[] wavData = WavUtility.FromAudioClip(e.audioClip);
         e.audioClip.GetData(tmp, 0);
         byte[] audioData = WavUtility.ConvertAudioClipDataToInt16ByteArray(tmp);
         // make a post request, sending byte data
-        StartCoroutine(postGenQuestionReq(audioData));
+        StartCoroutine(postGenQuestionReq(wavData));
     }
 
     private void GetResponse(AudioClip clip) {
