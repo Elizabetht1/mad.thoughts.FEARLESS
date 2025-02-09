@@ -15,7 +15,8 @@ def constructMsg(
     userRole = "interviewee",
     userQuery = None
 ):
-   
+    
+    print(userQuery)
     if not userQuery:
         return {"ok":False,"error":"no user string provided","messages":[]}
     systemMsg = {
@@ -49,7 +50,7 @@ def generateText(
         logger.info(f"error with message generation: \n {error} \n")
         return {"ok": False, "error": f"error with message generation: \n {error}","text":""}
     
-    print(messages)
+
     response = client.chat.completions.create(
         model="sonar",
         messages=messages,

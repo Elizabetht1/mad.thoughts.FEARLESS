@@ -42,6 +42,7 @@ async def generate_conversation(config: ConvoConfig)->str:
         print("error loading question text.\n")
         print(questionText['error'])
         return {"ok": False, "error": questionText['error'],"data":""}
+    print(questionText)
     questionAudioURL = audioGen.generateAudio(questionText['text'])
     
     # resp = Response(content=questionAudio,media_type="audio/mp3")
@@ -59,5 +60,4 @@ async def transcribe_user_speech(file: UploadFile):
         shutil.copyfileobj(file.file, buffer)
 
     transcription = audioStore.transcribeAudio(f"./user_audio_files/{file.filename}")
-    print(transcription)
     return transcription
