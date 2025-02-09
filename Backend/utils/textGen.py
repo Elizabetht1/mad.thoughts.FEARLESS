@@ -24,7 +24,6 @@ def constructMsg(
         "content": (
             f"You are a {agentRole} and you need to "
             f"engage in a {agentTone} conversation with a {userRole}."
-            f"Respond to the query the user says and summarize what they said."
         ),
     }
     userMsg = {   
@@ -43,7 +42,7 @@ def generateText(
 ):
     logging.basicConfig(filename='./logging/textGen.log', level=logging.INFO)
 
-    userQuery = " ".join(userQuery)
+    # userQuery = " ".join(userQuery)
     ok,error,messages = constructMsg(agentRole,agentTone,userRole, userQuery).values()
    
     if not ok:
@@ -67,6 +66,7 @@ def generateText(
             logger.info("potential choice from perplexity\n")
             logger.info(choice)
 
+    print(response.choices[0])
     res = response.choices[0].message.content
     return {"ok": True, "error": "","text":res}
     

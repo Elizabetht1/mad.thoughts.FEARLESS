@@ -1,0 +1,551 @@
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 94 
+prompt_tokens_used: 58 
+total_tokens_used: 152 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='It seems like you\'re asking for a job, and you\'ve added a playful touch with "pretty please." Let\'s have a conversation about your job aspirations. Could you tell me a bit about yourself, such as your background, skills, and what kind of job you\'re interested in? This will help me better understand how I can assist you. \n\nTo summarize, you\'re looking for a job and would like some assistance in finding one. Is that correct?', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 313 
+prompt_tokens_used: 1218 
+total_tokens_used: 1531 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='Here are some job opportunities and in-demand roles for 2025:\n\n### High-Demand Jobs in 2025\n\n1. **Veterinarian**: With a median salary of $139,999, veterinarians are in high demand due to increased pet ownership and a growing need for animal care[1].\n2. **Sales Representative**: This role offers a median salary of $182,487 and involves promoting and selling products for companies[1].\n3. **Physician**: Physicians earn a median salary of $225,000 and are crucial in the healthcare sector, which continues to grow[1].\n4. **Data Scientist**: With a median wage of $51.93 per hour, data scientists are needed to analyze and interpret data for businesses[3].\n5. **Actuary**: Actuaries have a median wage of $57.69 per hour and are essential for assessing financial risks in insurance[3].\n\n### Job Opportunities at Pretty Please Boutique\n\nWhile there are no specific job listings for "Pretty Please Boutique" in the search results, there are numerous retail and sales positions available in similar environments. For example, **Retail Sales Associate** roles are common and can be found on job boards like Indeed[4].\n\n### Tips for Job Hunting\n\n- **Networking**: Utilize professional networks and online platforms to connect with potential employers.\n- **Skill Development**: Focus on acquiring skills that are in high demand, such as data analysis or healthcare.\n- **Flexibility**: Be open to different locations and types of employment, including remote or hybrid roles.', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 101 
+prompt_tokens_used: 58 
+total_tokens_used: 159 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='It seems like you\'re expressing a desire for a job, saying "give me a job pretty please." Let\'s break down what you\'re looking for:\n\n1. **Job Interest**: You\'re interested in finding a job.\n2. **Tone**: Your request is polite and hopeful.\n\nTo assist you further, could you tell me a bit more about your skills, interests, or any specific job roles you\'re interested in? This will help tailor our conversation to find a suitable opportunity for you.', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 102 
+prompt_tokens_used: 58 
+total_tokens_used: 160 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='It seems like you\'re asking for a job, and you\'ve added a playful touch by saying "pretty please." Let\'s have a conversation about what kind of job you\'re interested in and what skills you bring to the table. Could you tell me a bit more about yourself and what you\'re looking for in a job? What are your strengths and interests? \n\nTo summarize, you\'re asking for assistance in finding a job, and you\'re open to discussing your qualifications and preferences. Is that correct?', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 108 
+prompt_tokens_used: 58 
+total_tokens_used: 166 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='It seems like you\'re expressing a desire for a job in a playful manner. You\'re saying "give me a job pretty please," which suggests you\'re looking for employment opportunities. Could you tell me a bit more about your background, skills, or the type of job you\'re interested in? This will help me better understand your needs and provide more tailored advice or suggestions. \n\nTo summarize, you\'ve expressed a desire for a job and are open to exploring different opportunities. Is there a specific industry or role you\'re interested in?', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Finished server process [60377]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 107 
+prompt_tokens_used: 53 
+total_tokens_used: 160 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='It seems like you\'re trying to engage in a conversation by saying, "How\'s it going? I\'m..." However, it appears you might have left out the rest of your sentence. Typically, "How\'s it going?" is a casual greeting similar to "How are you?" and is often responded to with a brief statement about how one is doing, such as "I\'m good, thanks" or "I\'m doing well." Could you please complete your thought or provide more context so I can better understand and respond?', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 37 
+prompt_tokens_used: 1208 
+total_tokens_used: 1245 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like your query is empty. Could you please provide more details or clarify what you are looking for? I'm here to help with any information or questions you might have.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 37 
+prompt_tokens_used: 1208 
+total_tokens_used: 1245 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like your query is incomplete or contains no text. Could you please provide more details or clarify your question? I'm here to help with any information or assistance you need.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [60526]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 149 
+prompt_tokens_used: 66 
+total_tokens_used: 215 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='It seems like there might be a slight misunderstanding or typo in your message. However, if you\'re asking about the phrase "how\'s it going," it\'s a common informal greeting similar to "how are you?" or "what\'s up?" It\'s often used as a friendly way to start a conversation without expecting a detailed response. Typically, people respond with brief answers like "good," "fine," or "great."\n\nIf you\'re asking for a response to someone who said "how\'s it going," you might say something like:\n\n**You:** "Good, thanks. How about you?"\n\nThis keeps the conversation light and friendly.\n\nIf there\'s more context or a specific part of the phrase you\'re interested in, please clarify', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 35 
+prompt_tokens_used: 1208 
+total_tokens_used: 1243 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like your query is empty. Could you please provide more details or clarify what you're asking? I'm here to help with any information or assistance you need.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 32 
+prompt_tokens_used: 1208 
+total_tokens_used: 1240 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like your query is incomplete. Could you please provide more details or clarify what you are asking about? I'll do my best to assist you.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 37 
+prompt_tokens_used: 1208 
+total_tokens_used: 1245 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like your query is incomplete or empty. Could you please provide more details or clarify what you are asking? I'm here to help with any information or assistance you need.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 35 
+prompt_tokens_used: 1208 
+total_tokens_used: 1243 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like your query is incomplete. Could you please provide more details or clarify what you are asking? I'm here to help with any information or assistance you need.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 90 
+prompt_tokens_used: 53 
+total_tokens_used: 143 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='It seems like you\'re expressing a desire to obtain or achieve something, but the specifics are unclear. Could you please elaborate on what you mean by "I want to get this"? What is it that you\'re interested in acquiring or accomplishing? This will help me better understand your statement and guide our conversation. \n\nTo summarize, you\'ve expressed a desire to "get this," but the context or object of your desire hasn\'t been specified.', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 36 
+prompt_tokens_used: 1208 
+total_tokens_used: 1244 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like your query is incomplete. Could you please provide more details or clarify what you are asking about? I'm here to help with any information or assistance you need.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 128 
+prompt_tokens_used: 49 
+total_tokens_used: 177 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='It seems like you\'re asking, "How\'s it going?" This is a common greeting used to inquire about someone\'s current situation or mood. If you\'d like to respond, you might say something like, "It\'s going well, thanks," or share any updates you have.\n\nTo summarize, you\'re initiating a conversation by asking about the interviewee\'s current state. Let\'s proceed with the conversation:\n\n**Interviewer:** So, how\'s it going? Any new developments or updates you\'d like to share?\n\n**Interviewee:** (Please respond with your thoughts or updates.)\n\nI\'ll summarize your response once you provide it.', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/staticfiles.py", line 99, in __call__
+    await response(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/responses.py", line 357, in __call__
+    await self._handle_simple(send, send_header_only)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/responses.py", line 386, in _handle_simple
+    await send({"type": "http.response.body", "body": chunk, "more_body": more_body})
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 39, in sender
+    await send(message)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 162, in _send
+    await send(message)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 536, in send
+    raise RuntimeError("Response content longer than Content-Length")
+RuntimeError: Response content longer than Content-Length
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/staticfiles.py", line 99, in __call__
+    await response(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/responses.py", line 357, in __call__
+    await self._handle_simple(send, send_header_only)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/responses.py", line 386, in _handle_simple
+    await send({"type": "http.response.body", "body": chunk, "more_body": more_body})
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 39, in sender
+    await send(message)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 162, in _send
+    await send(message)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 536, in send
+    raise RuntimeError("Response content longer than Content-Length")
+RuntimeError: Response content longer than Content-Length
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/staticfiles.py", line 99, in __call__
+    await response(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/responses.py", line 357, in __call__
+    await self._handle_simple(send, send_header_only)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/responses.py", line 386, in _handle_simple
+    await send({"type": "http.response.body", "body": chunk, "more_body": more_body})
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 39, in sender
+    await send(message)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 162, in _send
+    await send(message)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 536, in send
+    raise RuntimeError("Response content longer than Content-Length")
+RuntimeError: Response content longer than Content-Length
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 36 
+prompt_tokens_used: 1208 
+total_tokens_used: 1244 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like your query is incomplete. Could you please provide more details or clarify what you are asking for? I'm here to help with any information or assistance you need.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 35 
+prompt_tokens_used: 1208 
+total_tokens_used: 1243 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like your query is empty. Could you please provide more details or clarify what you are asking? I'm here to help with any information or assistance you need.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [60610]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 133 
+prompt_tokens_used: 43 
+total_tokens_used: 176 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='It seems like you\'re using the phrase "how\'s it" in a casual context. This phrase is often used as a friendly greeting or to inquire about someone\'s well-being, similar to "how are you?" or "how\'s it going?" It\'s commonly used in informal settings among acquaintances or friends.\n\nTo respond to your query, I would say: "It\'s going well, thanks. How about you?" This keeps the conversation light and open for further discussion.\n\nIf you\'d like to share more about what you\'re referring to with "how\'s it," please feel free to elaborate, and I\'ll be happy to engage in a conversation.', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [60723]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 187 
+prompt_tokens_used: 54 
+total_tokens_used: 241 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='It seems like you\'re testing a greeting in a conversation. Let\'s engage in a neutral conversation. Here\'s how you might respond to the greeting "Hello, how\'s it going?" in a professional setting:\n\n**Interviewer:** "Hello, how\'s it going? I\'m testing, so let\'s get started with our conversation."\n\n**Interviewee Response Example:**\n"I\'m doing well, thank you. It\'s nice to be here. How about you?"\n\nThis response is polite and brief, which is suitable for a professional setting. It also shows interest in the interviewer, which is important for maintaining a balanced conversation.\n\nIf you\'d like to continue the conversation, you could ask a follow-up question, such as:\n\n**Interviewer:** "That\'s great to hear. What do you think about [current topic or event]?"\n\nThis approach keeps the conversation light and engaging while allowing the interviewee to share their thoughts.', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 28 
+prompt_tokens_used: 1208 
+total_tokens_used: 1236 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like your query is incomplete or missing. Could you please provide more details or clarify your question? I'm here to help", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [60763]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 93 
+prompt_tokens_used: 110 
+total_tokens_used: 203 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Hello How's it going? I hope you're doing well. Let's talk about something interesting. What do you think about the weather lately? Or perhaps we could discuss something more technical, like background noise in speech or how apps can help manage it. There are some really cool tools out there for reducing background noise, like Audacity or Krisp, which can be super useful for improving audio quality. What are your thoughts on these kinds of apps?", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 63 
+prompt_tokens_used: 51 
+total_tokens_used: 114 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like you're starting a conversation about a sponsor. Could you clarify what you're referring to? Are you asking about a sponsor in a business context, perhaps someone who supports a company or event financially, or maybe in a personal context, such as a mentor or supporter? Let's explore this further", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [60809]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 283 
+prompt_tokens_used: 61 
+total_tokens_used: 344 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Hello It's great to meet you. I can sense your enthusiasm and confidence, which are excellent qualities for any candidate. To help you prepare for the interview, let's focus on a few key areas that can make your conversation even more effective.\n\n1. **Research the Company**: Make sure you have a good understanding of our company's mission, values, and current projects. This will help you tailor your responses and show genuine interest in the role.\n\n2. **Review the Job Description**: Familiarize yourself with the job requirements and think about how your skills and experiences align with them. Prepare examples that highlight your strengths and achievements.\n\n3. **Practice Common Interview Questions**: Anticipate questions about your strengths, weaknesses, and past experiences. Use the STAR method to structure your answers, providing clear situations, tasks, actions, and results.\n\n4. **Prepare Questions for Us**: Having thoughtful questions ready shows that you're engaged and interested in the position. Consider asking about the company culture, typical day in the role, or future opportunities.\n\n5. **Confidence and Authenticity**: It's great that you feel confident, but also be authentic and let your personality shine through. Maintain good eye contact, speak clearly, and listen attentively.\n\nLet's have a productive conversation and explore how you can contribute to our team. What specific aspects of the job or company would you like to discuss further?", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 36 
+prompt_tokens_used: 1207 
+total_tokens_used: 1243 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like your query is incomplete. Could you please provide more details or clarify what you are looking for? I'm here to help with any information or assistance you need.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/staticfiles.py", line 99, in __call__
+    await response(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/responses.py", line 357, in __call__
+    await self._handle_simple(send, send_header_only)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/responses.py", line 386, in _handle_simple
+    await send({"type": "http.response.body", "body": chunk, "more_body": more_body})
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 39, in sender
+    await send(message)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 162, in _send
+    await send(message)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 544, in send
+    raise RuntimeError("Response content shorter than Content-Length")
+RuntimeError: Response content shorter than Content-Length
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 36 
+prompt_tokens_used: 1207 
+total_tokens_used: 1243 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like your query is incomplete. Could you please provide more details or clarify what you're asking for? I'm here to help with any information or assistance you need.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/routing.py", line 460, in handle
+    await self.app(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/staticfiles.py", line 99, in __call__
+    await response(scope, receive, send)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/responses.py", line 357, in __call__
+    await self._handle_simple(send, send_header_only)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/responses.py", line 386, in _handle_simple
+    await send({"type": "http.response.body", "body": chunk, "more_body": more_body})
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/_exception_handler.py", line 39, in sender
+    await send(message)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/starlette/middleware/errors.py", line 162, in _send
+    await send(message)
+  File "/Users/elizabethterveen/anaconda3/envs/tartan-hacks-25/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 536, in send
+    raise RuntimeError("Response content longer than Content-Length")
+RuntimeError: Response content longer than Content-Length
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [60911]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 524 "
+INFO:openai._base_client:Retrying request to /chat/completions in 0.490261 seconds
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 68 
+prompt_tokens_used: 31 
+total_tokens_used: 99 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It sounds like you're in the process of applying for a position. Could you tell me a bit more about the role you're interested in? What aspects of the job appeal to you, and what steps have you taken so far in the application process? This will help me better understand your situation and provide more relevant guidance or support.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 50 
+prompt_tokens_used: 27 
+total_tokens_used: 77 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="Hello, hello How's it going? It's great to have you here today. I hope you're doing well and ready to chat about your latest endeavors. Could you tell us a little bit about yourself and what brings you here today?", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 35 
+prompt_tokens_used: 1207 
+total_tokens_used: 1242 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like your query is incomplete. Could you please provide more details or clarify what you are asking? I'm here to help with any information or assistance you need.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [61061]
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 234 
+prompt_tokens_used: 31 
+total_tokens_used: 265 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It sounds like you're in the midst of a job search. That can be both exciting and challenging. Let's explore some strategies that might help you in your search.\n\nFirst, have you taken some time to **define your career goals**? Knowing what you want in a role can really help focus your search. Consider what type of work excites you, what skills you want to use or develop, and which industries or companies align with your values.\n\nAlso, **refreshing your resume and LinkedIn profile** can make a big difference. Tailor your resume to each job you apply for, and ensure your LinkedIn profile showcases your achievements and skills.\n\n**Networking** is another powerful tool. Reconnect with past colleagues or attend local industry events to expand your network. And don't hesitate to reach out to people in your desired field for informational interviews.\n\nLastly, **upskilling** with online courses can help bridge any gaps between your current skills and job requirements. Platforms like LinkedIn Learning or Coursera offer a wide range of courses.\n\nWhat specific areas of your job search are you focusing on right now? Are there any particular industries or roles that interest you?", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+INFO:utils.textGen:received a response from perplexity. 
+completion_tokens_used: 36 
+prompt_tokens_used: 1207 
+total_tokens_used: 1243 
+
+INFO:utils.textGen:potential choice from perplexity
+
+INFO:utils.textGen:Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems like your query is incomplete. Could you please provide more details or clarify what you are asking about? I'm here to help with any information or assistance you need.", refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None), delta={'role': 'assistant', 'content': ''})
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [61198]

@@ -46,7 +46,7 @@ async def generate_conversation(config: ConvoConfig)->str:
     questionAudioURL = audioGen.generateAudio(questionText['text'])
     
     # resp = Response(content=questionAudio,media_type="audio/mp3")
-    return Response(content=questionAudioURL)
+    return questionAudioURL
 
 
 @app.post("/transcribe-user-speech")

@@ -1006,3 +1006,111 @@ gpt response: response
 audio transcription:  hello how's it going,
 gpt response: response
 
+audio transcription:  who's prettier today,
+gpt response: response
+
+audio transcription:  who sings doesn't have,
+gpt response: response
+
+audio transcription:  stop them you can take the thing,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  yeah that's,
+gpt response: response
+
+audio transcription:  like a Great Dane so,
+gpt response: response
+
+audio transcription:  I want to do dishes,
+gpt response: response
+
+audio transcription:  how's it going I'm,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  how's it going I'm asking for a,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  I want to get this,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  how's it going,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  how's it,
+gpt response: response
+
+audio transcription:  hello how's it going I'm testing,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  hello how's it going, what's the weather in speech, background noise and stops at an app,
+gpt response: response
+
+audio transcription:  I'm wondering if your sponsor,
+gpt response: response
+
+audio transcription:  well why don't you tell me, since you're literally supposed to be, surely you should have,
+gpt response: response
+
+audio transcription:  hello how's it going I'm trying to interview for a job and I think I'm a really great, and I'm probably the best candidate, and I'm wondering if you have any, about my,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  what's going on I'm applying for a, please,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  hello, hello how's it going,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
+audio transcription:  I'm looking for a job, and I really hope,
+gpt response: response
+
+audio transcription: 
+gpt response: response
+
